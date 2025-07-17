@@ -16,6 +16,7 @@
     align-items: center;
     gap: 6px;
     font-family: "Inter Tight", sans-serif;
+    user-select: none;
 }
 
 .Contact{
