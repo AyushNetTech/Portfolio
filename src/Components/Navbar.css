@@ -17,6 +17,12 @@
     gap: 6px;
     font-family: "Inter Tight", sans-serif;
 }
+
+.Contact{
+    color: black;
+    background-color: #fff082;
+}
+
 .l{
     flex: 1;
     height: 45px;
