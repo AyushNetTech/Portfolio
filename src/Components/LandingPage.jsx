@@ -15,7 +15,7 @@ import img10 from "../Images/NodeJS2.svg";
 import img11 from "../Images/MySQL.svg";
 import img12 from "../Images/GitHub.svg";
 
-import MainPage from "./Intro"; // ⬅️ your next component
+import MainPage from "./Intro"; 
 import Navbar from "./Navbar";
 
 const LandingPage = () => {
@@ -36,7 +36,7 @@ const LandingPage = () => {
 
     allImages.forEach((_, index) => {
       tl.set(imagesRef.current[index], { visibility: "visible" })
-        .set(imagesRef.current[index], { visibility: "hidden" }, "+=0.22");
+        .set(imagesRef.current[index], { visibility: "hidden" }, "+=0.2");
     });
 
     // Keep last image visible
