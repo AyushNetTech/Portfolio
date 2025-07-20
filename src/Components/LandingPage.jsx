@@ -17,6 +17,7 @@ import img12 from "../Images/GitHub.svg";
 
 import MainPage from "./Intro"; 
 import Navbar from "./Navbar";
+import Projects from "./Projects";
 
 const LandingPage = () => {
   const imagesRef = useRef([]);
@@ -77,6 +78,7 @@ const LandingPage = () => {
         <div ref={mainRef}>
           <MainPage />
           <Navbar/>
+          <Projects/>
         </div>
       )}
     </>

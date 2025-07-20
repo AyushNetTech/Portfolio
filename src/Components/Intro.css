@@ -10,14 +10,12 @@
     position: relative;
 }
 
-
 .Hello{
     position: absolute;
     height: auto;
     width: auto;
     top: 100px;
 }
-
 
 span{
     color: black;
@@ -26,3 +24,27 @@ span{
     user-select: none;
     font-weight: bolder;
 }
+
+
+
+/* Media Query for Responsivness*/
+
+@media (min-width:100px) and (max-width:400px){
+  .Intro{
+        height: 50vh;
+    }
+    span{
+        font-size: 100px;
+    }
+}
+
+@media (min-width:401px) and (max-width:550px){
+    .Intro{
+        height: 50vh;
+    }
+    span{
+        font-size: 140px;
+    }
+}
+
+
