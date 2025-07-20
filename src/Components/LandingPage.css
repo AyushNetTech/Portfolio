@@ -1,0 +1,16 @@
+.Landing {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+  height: 170px;
+}
+
+.img-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  visibility: hidden; /* start hidden */
+}
