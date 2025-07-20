@@ -17,6 +17,7 @@
     gap: 6px;
     font-family: "Inter Tight", sans-serif;
     user-select: none;
+    opacity: 1;
 }
 
 .Contact{

@@ -25,6 +25,11 @@ span{
     font-weight: bolder;
 }
 
+.text {
+    display: inline-block; /* REQUIRED for y animation to apply */
+}
+
+
 
 
 /* Media Query for Responsivness*/
