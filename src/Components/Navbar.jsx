@@ -24,7 +24,7 @@ const Navbar = () => {
       const currentScrollY = window.scrollY;
       const delta = currentScrollY - lastScrollY.current;
 
-      if (delta > 8 && !isHidden.current) {
+      if (delta > 2 && !isHidden.current) {
         // Scroll down → hide navbar
         gsap.to(navbarRef.current, {
           y: -100,
