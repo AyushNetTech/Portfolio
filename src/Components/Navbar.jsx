@@ -32,7 +32,7 @@ const Navbar = () => {
           ease: "power3.out",
         });
         isHidden.current = true;
-      } else if (delta < -8 && isHidden.current) {
+      } else if (delta < -2 && isHidden.current) {
         // Scroll up → show navbar
         gsap.to(navbarRef.current, {
           y: 0,
