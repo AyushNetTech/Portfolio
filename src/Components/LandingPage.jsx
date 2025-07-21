@@ -16,7 +16,6 @@ import img11 from "../Images/MySQL.svg";
 import img12 from "../Images/GitHub.svg";
 
 import MainPage from "./Intro"; 
-import Navbar from "./Navbar";
 import Projects from "./Projects";
 
 const LandingPage = () => {
@@ -40,10 +39,6 @@ const LandingPage = () => {
         .set(imagesRef.current[index], { visibility: "hidden" }, "+=0.2");
     });
 
-    // Keep last image visible
-    // tl.set(imagesRef.current[allImages.length - 1], {
-    //   visibility: "visible",
-    // });
   }, []);
 
   useEffect(() => {
@@ -77,7 +72,6 @@ const LandingPage = () => {
       {showMain && (
           <div ref={mainRef} style={{ opacity: 0 }}>
             <MainPage />
-            <Navbar />
             <Projects />
           </div>
       )}
