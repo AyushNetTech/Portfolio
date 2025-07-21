@@ -14,13 +14,13 @@
     position: absolute;
     height: auto;
     width: auto;
-    top: 70px;
+    top: 20px;
 }
 
 span{
     color: black;
-    font-size: 460px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 440px;
+    font-family: "Anton SC", sans-serif;
     user-select: none;
     font-weight: bolder;
 }
@@ -42,7 +42,7 @@ span{
         font-size: 120px;
     }
     .Hello{
-        top: 35%;
+        top: 25%;
     }
 }
 
@@ -54,7 +54,7 @@ span{
         font-size: 140px;
     }
     .Hello{
-        top: 30%;
+        top: 23%;
     }
 }
 
