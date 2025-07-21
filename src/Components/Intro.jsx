@@ -10,9 +10,10 @@ const Intro = ()=>{
 
     useGSAP(()=>{
         gsap.from(".text",{
-            y:300,
-            duration:1,
-            stagger:0.07,
+            y:100,
+            duration: 1,
+            opacity:0,
+            stagger:0.15,
         })
     })
     return (

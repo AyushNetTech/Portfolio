@@ -41,9 +41,9 @@ const LandingPage = () => {
     });
 
     // Keep last image visible
-    tl.set(imagesRef.current[allImages.length - 1], {
-      visibility: "visible",
-    });
+    // tl.set(imagesRef.current[allImages.length - 1], {
+    //   visibility: "visible",
+    // });
   }, []);
 
   useEffect(() => {
@@ -75,11 +75,11 @@ const LandingPage = () => {
       </div>
 
       {showMain && (
-        <div ref={mainRef}>
-          <MainPage />
-          <Navbar/>
-          <Projects/>
-        </div>
+          <div ref={mainRef} style={{ opacity: 0 }}>
+            <MainPage />
+            <Navbar />
+            <Projects />
+          </div>
       )}
     </>
   );
