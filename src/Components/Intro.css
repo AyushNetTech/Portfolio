@@ -16,16 +16,12 @@
     width: auto;
     top: 20px;
 }
-
-span{
+.text {
     color: black;
     font-size: 440px;
     font-family: "Anton SC", sans-serif;
     user-select: none;
     font-weight: bolder;
-}
-
-.text {
     display: inline-block; /* REQUIRED for y animation to apply */
 }
 
