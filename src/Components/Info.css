@@ -31,6 +31,10 @@
     font-family: "Silkscreen", sans-serif;
 }
 
+#d:hover{
+    color: #eed72c;
+}
+
 #e{
     font-size: 120px;
     font-weight: bolder;
