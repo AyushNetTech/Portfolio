@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./LandingPage.css";
 import { gsap } from "gsap";
+import Info from "./Info";
 
 import img1 from "../Images/C.svg";
 import img2 from "../Images/C++.svg";
@@ -72,6 +73,7 @@ const LandingPage = () => {
       {showMain && (
           <div ref={mainRef} style={{ opacity: 0 }}>
             <MainPage />
+            <Info/>
             <Projects />
           </div>
       )}

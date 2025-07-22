@@ -24,20 +24,20 @@ const Navbar = () => {
       const currentScrollY = window.scrollY;
       const delta = currentScrollY - lastScrollY.current;
 
-      if (delta > 2 && !isHidden.current) {
+      if (delta > 0.1 && !isHidden.current) {
         // Scroll down → hide navbar
         gsap.to(navbarRef.current, {
           y: -100,
           duration: 1,
-          ease: "power3.out",
+          ease: "easeOutQuart",
         });
         isHidden.current = true;
-      } else if (delta < -2 && isHidden.current) {
+      } else if (delta < -0.1 && isHidden.current) {
         // Scroll up → show navbar
         gsap.to(navbarRef.current, {
           y: 0,
           duration: 1,
-          ease: "power3.out",
+          ease: "easeOutQuart",
         });
         isHidden.current = false;
       }
