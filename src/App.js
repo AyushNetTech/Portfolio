@@ -9,7 +9,7 @@ const App =()=>{
       <div className="App">
         <Navbar />
         <LandingPage/>
-        {/* <CustomCursor/> */}
+        <CustomCursor/>
       </div>
     )
 }
