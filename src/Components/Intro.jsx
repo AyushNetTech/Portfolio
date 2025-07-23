@@ -2,8 +2,6 @@ import React from "react"
 import "./Intro.css"
 import { useGSAP } from "@gsap/react"
 import gsap from 'gsap';
-import Navbar from "./Navbar";
-import Projects from "./Projects";
 
 
 const Intro = ()=>{
@@ -18,7 +16,6 @@ const Intro = ()=>{
     })
     return (
         <div className="Intro">
-            {/* <Navbar/> */}
             <div className="Hello">
                 <span className="text">H</span>
                 <span className="text">E</span>

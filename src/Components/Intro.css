@@ -18,11 +18,11 @@
 }
 .text {
     color: black;
-    font-size: 440px;
+    font-size: 32vw;
     font-family: "Anton SC", sans-serif;
     user-select: none;
     font-weight: bolder;
-    display: inline-block; /* REQUIRED for y animation to apply */
+    display: inline-block;
 }
 
 
@@ -34,7 +34,7 @@
   .Intro{
         height: 35vh;
     }
-    span{
+    .text{
         font-size: 120px;
     }
     .Hello{
@@ -46,7 +46,7 @@
     .Intro{
         height: 40vh;
     }
-    span{
+    .text{
         font-size: 140px;
     }
     .Hello{
