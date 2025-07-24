@@ -7,6 +7,19 @@
     user-select: none;
 }
 
+.Upper{
+    height: 35vh;
+    width: 100%;
+    /* background-color: #eed72c; */
+}
+
+.ab{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 0px 20px;
+}
+
 #a{
     font-size: 5.5vw;
     font-weight: 500;
@@ -19,18 +32,40 @@
     font-family: "Anton SC", sans-serif;
 }
 
+.Below{
+    height: 65vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    padding-top: 20px;
+}
+
+.Text{
+    height: 100%;
+    width: 60%;
+    /* background-color: blueviolet; */
+    padding: 0px 20px;
+}
+
+.TextA{
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
 #c{
-    font-size:6vw;
+
+    font-size:6.5vw;
     font-weight: bolder;
     font-family: "Turret Road", sans-serif;
 }
 
 #d{
-    font-size: 4.5vw;
-    font-weight: bold;
+    font-size: 9vw;
+    /* font-weight: bold; */
     color: rgb(236, 48, 48);
-    margin-right: 50px;
-    font-family: "Silkscreen", sans-serif;
+    font-family: "Monoton", sans-serif;
 }
 
 #d:hover{
@@ -38,13 +73,37 @@
 }
 
 #e{
-    font-size: 6vw;
+    font-size: 6.5vw;
     font-weight: bolder;
     font-family: "Turret Road", sans-serif;
 }
 
+.Video{
+    height: 100%;
+    width: 40%;
+    /* background-color: brown; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
 
-/* Media Query for Responsivness*/
+.VFrame{
+    height: 90%;
+    width: 90%;
+    /* background-color: #eed72c; */
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.VFrame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+/* Medi{a Query for Responsivness*/
 
 @media (min-width:100px) and (max-width:400px){
     .Info{

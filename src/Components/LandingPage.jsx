@@ -74,7 +74,7 @@ const LandingPage = () => {
           <div ref={mainRef} style={{ opacity: 0 }}>
             <MainPage />
             <Info/>
-            <Projects />
+            {/* <Projects /> */}
           </div>
       )}
     </>
