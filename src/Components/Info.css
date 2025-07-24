@@ -95,11 +95,10 @@
     border: 2px solid black;
 }
 
-.VFrame img{
+.Video .VFrame video{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 
 

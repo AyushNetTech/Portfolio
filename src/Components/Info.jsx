@@ -1,6 +1,7 @@
 import React from "react"
 import "./Info.css"
 
+
 const Info=()=>{
     return(
         <div className="Upper">
@@ -22,10 +23,7 @@ const Info=()=>{
                 </div>
                 <div className="Video">
                     <div className="VFrame">
-                        <video width="640" height="360" controls>
-                            <source src="../" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                        <video src="../Images/InfoV.mp4" autoplay muted loop></video>
                     </div>
                 </div>
             </div>
