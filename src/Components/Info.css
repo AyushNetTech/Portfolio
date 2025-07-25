@@ -1,34 +1,48 @@
 .Info{
     /* position: relative; */
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #e8e8e8;
-    padding: 0px 30px;
     user-select: none;
+    padding-top: 10px;
 }
 
 .Upper{
     background-color: #e8e8e8;
     height: 35vh;
     width: 100%;
-    /* background-color: #eed72c; */
+    overflow: hidden;
+    display: flex;
 }
 
-.ab{
+.divA{
     height: 100%;
-    width: 100%;
+    width: fit-content;
     /* background-color: aqua; */
-    padding: 0px 20px;
+    padding: 0px 40px;
+    display: flex;
+    align-items: end;
+}
+
+.divB{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    margin-top: 20px;
+    padding-left: 20px;
 }
 
 #a{
-    font-size: 6vw;
+    width: fit-content;
+    height: fit-content;
+    font-size: 6.5vw;
     font-weight: 500;
     font-family: "Monoton", sans-serif;
-    margin-right: 4vw;
 }
 
 #b{
+    width: fit-content;
+    height: fit-content;
     font-size: 13vw;
     font-family: "Anton SC", sans-serif;
 }
@@ -39,39 +53,58 @@
     width: 100%;
     /* background-color: blue; */
     display: flex;
-    padding-top: 20px;
 }
 
 .Text{
     height: 100%;
     width: 60%;
-    /* background-color: blueviolet; */
-    padding: 0px 20px;
+    padding-left: 40px;
 }
 
 .TextA{
     height: auto;
     width: 100%;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.TextB{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.Text1{
+    height: auto;
+    width:min-content;
+    /* background-color: #eed72c; */
+    overflow: hidden;
 }
 
 #c{
-
+    height: fit-content;
+    width: fit-content;
     font-size:6.5vw;
     font-weight: bolder;
     font-family: "Turret Road", sans-serif;
 }
 
+.Text2{
+    height: auto;
+    width: min-content;
+    /* background-color: aqua; */
+    overflow: hidden;
+}
 #d{
-    font-size: 9vw;
-    /* font-weight: bold; */
-    color: rgb(236, 48, 48);
+    scale: 0;
+    font-size: 8.5vw;
     font-family: "Monoton", sans-serif;
+    font-weight: 100;
+    padding: 20px;
 }
 
 #d:hover{
-    color: #eed72c;
+    color: rgb(236, 48, 48);
 }
 
 #e{
@@ -85,11 +118,9 @@
 .Video{
     height: 100%;
     width: 40%;
-    padding: 0px 30px 0px 0;
-    /* background-color: brown; */
+    padding-right: 40px;
+    overflow: hidden;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .VFrame{
@@ -104,7 +135,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 50px;
-    border: 5px solid black;
+    border: 5px solid white;
 }
 
 
