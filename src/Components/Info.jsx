@@ -9,6 +9,42 @@ gsap.registerPlugin(ScrollTrigger); // ✅ Add this at the top
 const Info=()=>{
 
     useGSAP(() => {
+
+        const mm = gsap.matchMedia();
+
+        mm.add("(max-width: 768px)", () => {
+            // 📱 Mobile – No ScrollTrigger, run immediately
+            gsap.from("#a", {
+            x: -100,
+            duration: 0.5,
+            delay: 1,
+            });
+            gsap.from("#b", {
+            y: 100,
+            duration: 0.5,
+            delay: 1.2,
+            });
+            gsap.from("#c", {
+            x: 100,
+            duration: 0.5,
+            delay: 1.4,
+            });
+            gsap.to("#d", {
+            scale: 1,
+            duration: 0.5,
+            delay: 1.6,
+            });
+            gsap.from("#e", {
+            y: 100,
+            duration: 0.5,
+            delay: 1.8,
+            });
+            gsap.from(".VFrame", {
+            x: -200,
+            duration: 0.5,
+            delay: 2,
+            });
+        });
         gsap.from("#a", {
             x: -300,
             duration: 0.5,
