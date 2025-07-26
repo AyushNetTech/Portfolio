@@ -104,7 +104,7 @@ const Info=()=>{
             <div className="Upper">
                 <div className="divA">
                     <h1 id="a">
-                    I <span style={{ color: "red", fontFamily: 'Anton SC, sans-serif' }}>'</span>
+                    I <span style={{ color: "rgb(236, 48, 48)", fontFamily: 'Anton SC, sans-serif' }}>'</span>
                     Am
                     </h1>
                 </div>
