@@ -13,13 +13,13 @@
     width: 100%;
     overflow: hidden;
     display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
 }
 
 .divA{
     height: 100%;
     width: fit-content;
-    /* background-color: aqua; */
-    padding: 0px 40px;
     display: flex;
     align-items: end;
 }
@@ -28,6 +28,7 @@
     height: 100%;
     display: flex;
     align-items: end;
+    justify-content: end;
     margin-top: 20px;
     padding-left: 20px;
 }
@@ -35,35 +36,37 @@
 #a{
     width: fit-content;
     height: fit-content;
-    font-size: 6.5vw;
+    font-size: 7vw;
     font-weight: 500;
     font-family: "Monoton", sans-serif;
 }
 
 #b{
-    width: fit-content;
-    height: fit-content;
-    font-size: 13vw;
+    width: 100%;
+    height: min-content;
+    font-size: 13.5vw;
     font-family: "Anton SC", sans-serif;
 }
 
 .Below{
     background-color: #e8e8e8;
-    height: 65vh;
+    height: min-content;
     width: 100%;
+    padding: 0px 50px;
     /* background-color: blue; */
     display: flex;
 }
 
 .Text{
-    height: 100%;
-    width: 60%;
-    padding-left: 40px;
+    height: min-content;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .TextA{
     height: auto;
-    width: 100%;
+    width: min-content;
     display: flex;
     margin-bottom: 10px;
     overflow: hidden;
@@ -73,6 +76,7 @@
     height: auto;
     width: 100%;
     overflow: hidden;
+    align-items: end;
 }
 .Text1{
     height: auto;
@@ -116,15 +120,14 @@
 }
 
 .Video{
-    height: 100%;
-    width: 40%;
-    padding-right: 40px;
+    height: auto;
+    width: 100%;
     overflow: hidden;
     display: flex;
 }
 
 .VFrame{
-    height: 90%;
+    height: 100%;
     width: 100%;
     /* background-color: #eed72c; */
     
@@ -134,19 +137,19 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50px;
-    border: 5px solid white;
+    border-radius: 80px;
+    border: 6px solid black;
 }
 
 
 /* Medi{a Query for Responsivness*/
 
-@media (min-width:100px) and (max-width:400px){
+@media (min-width:100px) and (max-width:700px){
     .Info{
-        min-height: 35vh;
+        min-height: fit-content;
         width: 100%;
         user-select: none;
-        padding-top: 0;
+        padding-bottom: 20px;
     }
 
     .Upper{
@@ -154,14 +157,13 @@
         width: 100%;
         overflow: hidden;
         display: flex;
-        /* background-color: #111; */
+        padding: 0px 20px;
+        margin-top: 10px;
     }
 
     .divA{
         height: 100%;
         width: fit-content;
-        /* background-color: aqua; */
-        padding: 0px 10px;
         display: flex;
         align-items: end;
     }
@@ -183,28 +185,19 @@
     }
 
     #b{
-        width: fit-content;
-        height: fit-content;
         font-size: 13vw;
         font-family: "Anton SC", sans-serif;
     }
 
     .Below{
-        height: 30vh;
+        padding: 10px 20px;
         width: 100%;
-        /* background-color: blue; */
         display: flex;
     }
 
-    .Text{
-        height: 100%;
-        width: 60%;
-        padding-left: 10px;
-    }
 
     .TextA{
         height: auto;
-        width: 100%;
         display: flex;
         margin-bottom: 0px;
         overflow: hidden;
@@ -241,7 +234,7 @@
         font-size: 8.5vw;
         font-family: "Monoton", sans-serif;
         font-weight: 100;
-        padding: 20px;
+        padding: 6px;
     }
 
     #d:hover{
@@ -257,31 +250,18 @@
     }
 
     .Video{
-        height: 100%;
-        width: 40%;
-        padding-right: 40px;
-        overflow: hidden;
         display: flex;
-    }
-
-    .VFrame{
-        height: 90%;
-        width: 100%;
-        /* background-color: #eed72c; */
-        
+        align-items: end;
     }
 
     .VFrame video{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 50px;
-        border: 5px solid white;
+        border-radius: 25px;
+        border: 3px solid black;
     }
 }
 
-@media (min-width:401px) and (max-width:550px){
-    
-}
 
 

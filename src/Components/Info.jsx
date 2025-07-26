@@ -46,7 +46,7 @@ const Info=()=>{
             });
         });
         gsap.from("#a", {
-            x: -300,
+            x: -400,
             duration: 0.5,
             scrollTrigger: {
                 trigger: ".Intro",
@@ -54,8 +54,8 @@ const Info=()=>{
             },
         });
         gsap.from("#b", {
-            y: 200,
-            delay:0.7,
+            y: 300,
+            delay:0.5,
             duration: 0.5,
             scrollTrigger: {
                 trigger: ".Intro",
@@ -64,7 +64,6 @@ const Info=()=>{
         });
          gsap.from("#c", {
             x: 500,
-            delay:0.7,
             duration: 0.5,
             scrollTrigger: {
                 trigger: ".Intro",
@@ -73,7 +72,7 @@ const Info=()=>{
         });
         gsap.to("#d", {
             scale: 1,
-            delay:0.7,
+            delay:0.3,
             duration: 0.5,
             scrollTrigger: {
                 trigger: ".Intro",
@@ -82,7 +81,7 @@ const Info=()=>{
         });
         gsap.from("#e", {
             y:200,
-            delay:0.7,
+            delay:0.6,
             duration: 0.5,
             scrollTrigger: {
                 trigger: ".Intro",
@@ -91,7 +90,7 @@ const Info=()=>{
         });
         gsap.from(".VFrame", {
             x:-600,
-            delay:1,
+            delay:0.9,
             duration: 0.5,
             scrollTrigger: {
                 trigger: ".Intro",
@@ -104,7 +103,10 @@ const Info=()=>{
         <div className="Info">
             <div className="Upper">
                 <div className="divA">
-                    <h1 id="a">I Am</h1>
+                    <h1 id="a">
+                    I <span style={{ color: "red", fontFamily: 'Anton SC, sans-serif' }}>'</span>
+                    Am
+                    </h1>
                 </div>
                 <div className="divB">
                     <h1 id="b">Ayush Upase</h1>
