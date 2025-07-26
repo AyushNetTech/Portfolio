@@ -58,7 +58,7 @@ const Info=()=>{
             delay:0.5,
             duration: 0.5,
             scrollTrigger: {
-                trigger: ".Intro",
+                trigger: ".Info",
                 start: "top 60%",
             },
         });
@@ -66,7 +66,7 @@ const Info=()=>{
             x: 500,
             duration: 0.5,
             scrollTrigger: {
-                trigger: ".Intro",
+                trigger: ".Info",
                 start: "top 30%",
             },
         });
@@ -75,7 +75,7 @@ const Info=()=>{
             delay:0.3,
             duration: 0.5,
             scrollTrigger: {
-                trigger: ".Intro",
+                trigger: ".Info",
                 start: "top 30%",
             },
         });
@@ -84,7 +84,7 @@ const Info=()=>{
             delay:0.6,
             duration: 0.5,
             scrollTrigger: {
-                trigger: ".Intro",
+                trigger: ".Info",
                 start: "top 30%",
             },
         });
@@ -93,7 +93,7 @@ const Info=()=>{
             delay:0.9,
             duration: 0.5,
             scrollTrigger: {
-                trigger: ".Intro",
+                trigger: ".Info",
                 start: "top 30%",
             },
         });
