@@ -4,7 +4,7 @@ import infoV from "./video.mp4"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger); // ✅ Add this at the top
+gsap.registerPlugin(ScrollTrigger);
 
 const Info=()=>{
 
@@ -49,7 +49,7 @@ const Info=()=>{
             x: -400,
             duration: 0.5,
             scrollTrigger: {
-                trigger: ".Intro",
+                trigger: ".Info",
                 start: "top 60%",
             },
         });
