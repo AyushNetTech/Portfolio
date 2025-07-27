@@ -51,7 +51,7 @@ const Info=()=>{
                 x: -400,
                 duration: 0.5,
                 scrollTrigger: {                // Note: When i use trigger ' intro ' its work well when i run it 
-                    trigger: ".Info",           //       from vs code but after deploying its not worked well       
+                    trigger: ".Intro",           //       from vs code but after deploying its not worked well       
                     start: "top 60%",           //       but when i am make it ' info ' its worked well when 
                 },                              //       i am deploying but not worked well when i run it from vs code
             });
@@ -60,7 +60,7 @@ const Info=()=>{
                 delay:0.5,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Info",
+                    trigger: ".Intro",
                     start: "top 60%",
                 },
             });
@@ -68,7 +68,7 @@ const Info=()=>{
                 x: 500,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Info",
+                    trigger: ".Intro",
                     start: "top 30%",
                 },
             });
@@ -77,7 +77,7 @@ const Info=()=>{
                 delay:0.3,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Info",
+                    trigger: ".Intro",
                     start: "top 30%",
                 },
             });
@@ -86,7 +86,7 @@ const Info=()=>{
                 delay:0.6,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Info",
+                    trigger: ".Intro",
                     start: "top 30%",
                 },
             });
@@ -95,7 +95,7 @@ const Info=()=>{
                 delay:0.9,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Info",
+                    trigger: ".Intro",
                     start: "top 30%",
                 },
             });
