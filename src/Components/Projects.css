@@ -1,5 +1,118 @@
 .Projects{
-    background-color: #111;
+    background-color: #e8e8e8;
     width: 100%;
-    height: 100vh;
+    height: 240vh;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* overflow: hidden;  */
+}
+
+.Title{
+    height: min-content;
+    width: 100%;
+    /* background-color:aqua; */
+    font-size: 13vh;
+    font-family: "Anton SC", sans-serif;
+    font-weight: lighter;
+    padding: 0px 0px 60px;
+    text-align: center;
+}
+
+.ProContainer{
+    color: white;
+    height: fit-content;
+    width: 100%;
+    /* background-color: #111; */
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(4, auto);
+}
+
+.col-3{
+    grid-column: span 3;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+
+.box{
+    /* border: 5px solid red; */
+}
+
+.box1{
+    background-color: white;
+    border: 3px solid black;
+    aspect-ratio: 2/1.2;
+}
+
+.box6{
+    background-color: white;
+    border: 3px solid black;
+    aspect-ratio: 1/0.7;
+}
+
+.box11{
+    background-color: white;
+    border: 3px solid black;
+    aspect-ratio: 1/0.7;
+}
+
+.box17{
+    background-color: white;
+    border: 3px solid black;
+    aspect-ratio: 2/1.2;
+}
+
+
+
+@media (min-width:100px) and (max-width:400px){
+    .Projects{
+        height: 145vh;
+        padding: 0px 20px;
+    }
+    .Title{
+        /* background-color:aqua; */
+        font-size: 6vh;
+        padding: 40px 0px 30px;
+    }
+    .ProContainer{
+        color: white;
+        height: fit-content;
+        width: 100%;
+        /* background-color: #111; */
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(1, auto);
+        gap: 10px;
+    }
+
+}
+
+@media (min-width:401px) and (max-width:600px){
+    .Projects{
+        height: 200vh;
+        padding: 0px 20px;
+    }
+    .Title{
+        /* background-color:aqua; */
+        font-size: 6vh;
+        padding: 40px 0px 30px;
+    }
+    .ProContainer{
+        color: white;
+        height: fit-content;
+        width: 100%;
+        /* background-color: #111; */
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(1, auto);
+        gap: 10px;
+    }
 }

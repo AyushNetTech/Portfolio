@@ -1,6 +1,6 @@
 .Info{
     /* position: relative; */
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
     background-color: #e8e8e8;
     user-select: none;
@@ -124,23 +124,23 @@
     width: 100%;
     overflow: hidden;
     display: flex;
+    overflow: hidden;
 }
 
 .VFrame{
     height: 100%;
     width: 100%;
+    border-radius: 80px;
+    border: 6px solid black;
     /* background-color: #eed72c; */
-    
+    overflow: hidden;
 }
 
 .VFrame video{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 80px;
-    border: 6px solid black;
 }
-
 
 /* Medi{a Query for Responsivness*/
 
@@ -254,12 +254,14 @@
         align-items: end;
     }
 
+    .VFrame{
+        border-radius: 25px;
+        border: 3px solid black;
+    }
     .VFrame video{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 25px;
-        border: 3px solid black;
     }
 }
 

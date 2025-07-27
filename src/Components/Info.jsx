@@ -52,7 +52,7 @@ const Info=()=>{
                 duration: 0.5,
                 scrollTrigger: {                // Note: When i use trigger ' intro ' its work well when i run it 
                     trigger: ".Intro",           //       from vs code but after deploying its not worked well       
-                    start: "top 60%",           //       but when i am make it ' info ' its worked well when 
+                    start: "top 50%",           //       but when i am make it ' info ' its worked well when 
                 },                              //       i am deploying but not worked well when i run it from vs code
             });
             gsap.from("#b", {
@@ -61,7 +61,7 @@ const Info=()=>{
                 duration: 0.5,
                 scrollTrigger: {
                     trigger: ".Intro",
-                    start: "top 60%",
+                    start: "top 50%",
                 },
             });
             gsap.from("#c", {
