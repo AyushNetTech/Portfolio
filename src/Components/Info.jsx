@@ -51,8 +51,8 @@ const Info=()=>{
                 x: -400,
                 duration: 0.5,
                 scrollTrigger: {                // Note: When i use trigger ' intro ' its work well when i run it 
-                    trigger: ".Intro",           //       from vs code but after deploying its not worked well       
-                    start: "top 50%",           //       but when i am make it ' info ' its worked well when 
+                    trigger: ".Info",           //       from vs code but after deploying its not worked well       
+                    start: "top 50%",           //       but when i make it ' info ' its worked well when 
                 },                              //       i am deploying but not worked well when i run it from vs code
             });
             gsap.from("#b", {
@@ -60,7 +60,7 @@ const Info=()=>{
                 delay:0.5,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Intro",
+                    trigger: ".Info",
                     start: "top 50%",
                 },
             });
@@ -68,7 +68,7 @@ const Info=()=>{
                 x: 500,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Intro",
+                    trigger: ".Info",
                     start: "top 30%",
                 },
             });
@@ -77,7 +77,7 @@ const Info=()=>{
                 delay:0.3,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Intro",
+                    trigger: ".Info",
                     start: "top 30%",
                 },
             });
@@ -86,7 +86,7 @@ const Info=()=>{
                 delay:0.6,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Intro",
+                    trigger: ".Info",
                     start: "top 30%",
                 },
             });
@@ -95,7 +95,7 @@ const Info=()=>{
                 delay:0.9,
                 duration: 0.5,
                 scrollTrigger: {
-                    trigger: ".Intro",
+                    trigger: ".Info",
                     start: "top 30%",
                 },
             });

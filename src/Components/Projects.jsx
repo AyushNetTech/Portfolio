@@ -1,10 +1,35 @@
 import React from "react"
 import "./Projects.css"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+
 
 const Projects =()=>{
+
+    useGSAP(()=>{
+        const mm = gsap.matchMedia();
+
+        mm.add("(max-width: 768px)", () => {
+
+            gsap.from(".Title",{
+                y:200,
+                delay:2,
+                duration:1
+            })
+
+            gsap.from(".ProContainer",{
+                y:400,
+                delay:3,
+                duration:1
+            })
+        });
+    });
+
     return(
         <div className="Projects">
-            <div className="Title">Projects</div>
+            <div className="Title">
+                <h1>Projects</h1>
+            </div>
             <div className="ProContainer">
                 <div className="box box1 col-3 row-2"></div>
                 <div className="box box2"></div>
