@@ -35,7 +35,7 @@ const Info=()=>{
             delay: 1.6,
             });
             gsap.from("#e", {
-            y: 100,
+            x: 500,
             duration: 0.5,
             delay: 1.8,
             });
