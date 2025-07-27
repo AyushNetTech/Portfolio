@@ -82,7 +82,7 @@ const Info=()=>{
                 },
             });
             gsap.from("#e", {
-                y:200,
+                x:1000,
                 delay:0.6,
                 duration: 0.5,
                 scrollTrigger: {
