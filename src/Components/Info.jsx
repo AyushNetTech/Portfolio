@@ -45,57 +45,60 @@ const Info=()=>{
             delay: 2,
             });
         });
-        gsap.from("#a", {
-            x: -400,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".Info",
-                start: "top 60%",
-            },
-        });
-        gsap.from("#b", {
-            y: 300,
-            delay:0.5,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".Info",
-                start: "top 60%",
-            },
-        });
-         gsap.from("#c", {
-            x: 500,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".Info",
-                start: "top 30%",
-            },
-        });
-        gsap.to("#d", {
-            scale: 1,
-            delay:0.3,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".Info",
-                start: "top 30%",
-            },
-        });
-        gsap.from("#e", {
-            y:200,
-            delay:0.6,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".Info",
-                start: "top 30%",
-            },
-        });
-        gsap.from(".VFrame", {
-            x:-600,
-            delay:0.9,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".Info",
-                start: "top 30%",
-            },
+
+        mm.add("(min-width: 769px)", () => {
+            gsap.from("#a", {
+                x: -400,
+                duration: 0.5,
+                scrollTrigger: {                // Note: When i use trigger ' intro ' its work well when i run it 
+                    trigger: ".Info",           //       from vs code but after deploying its not worked well       
+                    start: "top 60%",           //       but when i am make it ' info ' its worked well when 
+                },                              //       i am deploying but not worked well when i run it from vs code
+            });
+            gsap.from("#b", {
+                y: 300,
+                delay:0.5,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: ".Info",
+                    start: "top 60%",
+                },
+            });
+            gsap.from("#c", {
+                x: 500,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: ".Info",
+                    start: "top 30%",
+                },
+            });
+            gsap.to("#d", {
+                scale: 1,
+                delay:0.3,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: ".Info",
+                    start: "top 30%",
+                },
+            });
+            gsap.from("#e", {
+                y:200,
+                delay:0.6,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: ".Info",
+                    start: "top 30%",
+                },
+            });
+            gsap.from(".VFrame", {
+                x:-600,
+                delay:0.9,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: ".Info",
+                    start: "top 30%",
+                },
+            });
         });
     });
 
