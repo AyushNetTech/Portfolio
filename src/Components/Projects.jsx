@@ -3,7 +3,6 @@ import "./Projects.css"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 
-
 const Projects =()=>{
 
     useGSAP(()=>{
@@ -31,7 +30,11 @@ const Projects =()=>{
                 <h1>Projects</h1>
             </div>
             <div className="ProContainer">
-                <div className="box box1 col-3 row-2"></div>
+                <div className="box box1 col-3 row-2">
+                    <div className="XTrackTh">
+                        {/* Xtrack Thumbnail background Image*/}
+                    </div>
+                </div>
                 <div className="box box2"></div>
                 <div className="box box3"></div>
                 <div className="box box4"></div>
