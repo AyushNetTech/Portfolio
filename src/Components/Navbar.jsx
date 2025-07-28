@@ -28,7 +28,7 @@ const Navbar = () => {
         // Scroll down → hide navbar
         gsap.to(navbarRef.current, {
           y: -100,
-          duration: 1,
+          duration: 0.8,
           ease: "easeOutQuart",
         });
         isHidden.current = true;
@@ -36,7 +36,7 @@ const Navbar = () => {
         // Scroll up → show navbar
         gsap.to(navbarRef.current, {
           y: 0,
-          duration: 1,
+          duration: 0.8,
           ease: "easeOutQuart",
         });
         isHidden.current = false;

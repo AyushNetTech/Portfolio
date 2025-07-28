@@ -1,12 +1,8 @@
 .Projects{
     background-color: #e8e8e8;
     width: 100%;
-    height: 240vh;
-    padding: 0px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    /* overflow: hidden;  */
+    height: min-content;
+    padding: 0px 45px 5px 45px;
 }
 
 .Title{
@@ -24,73 +20,99 @@
     font-weight: lighter;
 }
 
-.ProContainer{
-    color: white;
-    height: fit-content;
+.ProjectContainer{
+    height: 100%;
     width: 100%;
-    /* background-color: #111; */
+}
+
+.GridCont1{
+    height: auto;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.Grid{
     display: grid;
-    grid-template-columns: repeat(6,auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(6,1fr);
+    height: 100%;
+    width: auto;
+    margin-bottom: 100px;
 }
 
-.col-3{
-    grid-column: span 3;
+.Project1{
+    grid-column: 1/4;
+    height: auto;
+    aspect-ratio: 16/12;
+    /* background-color: #111; */
+    margin-top: 20px;
+    color: black;
 }
 
-.col-2{
-    grid-column: span 2;
+.ImgCont{
+    height: 90%;
+    width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
-.row-2{
-    grid-row: span 2;
-}
-
-.box{
-    /* border: 5px solid red; */
-}
-
-.box1{
-    aspect-ratio: 2/1.2;
-}
-
-.XTrackTh{
+.ProImg{
     height: 100%;
     width: 100%;
     background-color: #111;
-    border: 3px solid black;
+    /* border: 5px solid black; */
     background-image: url(../Images/XTrack.jpg);
     background-position: center;
+    /* background-repeat: no-repeat; */
     background-size: contain;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.XTrackTh:hover{
-    transform: scale(0.96);
     transition: 0.5s;
 }
 
-
-.box6{
-    background-color: white;
-    border: 3px solid black;
-    aspect-ratio: 1/0.7;
+.Project1 h1{
+    padding-top: 8px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 100;
+    font-size: 4vh;
 }
 
-.box11{
-    background-color: white;
-    border: 3px solid black;
-    aspect-ratio: 1/0.7;
+.ImgCont:hover{
+    transform: scale(0.98);
+    transition: 0.5s;
 }
 
-.box17{
-    background-color: white;
-    border: 3px solid black;
-    aspect-ratio: 2/1.2;
+.ImgCont:hover .ProImg{
+    transform: scale(1.07);
+    transition: 0.5s;
 }
 
+.Project2{
+    grid-column: 5/7;
+    height: auto;
+    aspect-ratio: 16/9;
+    background-color: #111;
+    margin-top: -50%;
+}
+
+.GridCont2{
+     height: auto;
+    width: 100%;
+    /* background-color: burlywood; */
+}
+
+.Project3{
+    grid-column: 1/3;
+    height: auto;
+    aspect-ratio: 16/9;
+    background-color: black;
+}
+
+.Project4{
+    grid-column: 4/7;
+    height: auto;
+    aspect-ratio: 16/12;
+    background-color: black;
+    margin-top: -20%;
+}
 
 
 @media (min-width:100px) and (max-width:400px){
