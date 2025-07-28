@@ -117,7 +117,7 @@
 
 @media (min-width:100px) and (max-width:400px){
     .Projects{
-        height: 145vh;
+        height: min-content;
         padding: 0px 20px;
     }
     .Title{
@@ -127,11 +127,17 @@
         /* background-color:aqua; */
         font-size: 6vh;
     }
+    .Project1 h1{
+        padding-top: 4px;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 100;
+        font-size: 3vh;
+    }
 }
 
 @media (min-width:401px) and (max-width:600px){
     .Projects{
-        height: 200vh;
+        height: min-content;
         padding: 0px 20px;
     }
     .Title{
