@@ -127,17 +127,6 @@
         /* background-color:aqua; */
         font-size: 6vh;
     }
-    .ProContainer{
-        color: white;
-        height: fit-content;
-        width: 100%;
-        /* background-color: #111; */
-        display: grid;
-        grid-template-columns: repeat(1,auto);
-        grid-template-rows: repeat(1, auto);
-        gap: 10px;
-    }
-
 }
 
 @media (min-width:401px) and (max-width:600px){
@@ -152,14 +141,17 @@
         /* background-color:aqua; */
         font-size: 6vh;
     }
-    .ProContainer{
-        color: white;
-        height: fit-content;
-        width: 100%;
-        /* background-color: #111; */
-        display: grid;
-        grid-template-columns: repeat(1,auto);
-        grid-template-rows: repeat(1, auto);
-        gap: 10px;
+}
+
+/* ************ For Project Container **********/
+
+@media screen and (max-width:786px) {
+    .Grid{
+        grid-template-columns: 1fr;
+    }
+
+    .Project1, .Project2, .Project3, .Project4{
+        grid-column: 1 / -1;
+        margin-top: 20px;
     }
 }
