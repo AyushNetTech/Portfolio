@@ -28,7 +28,8 @@ const Spacer = () => {
             const tlDesktop = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".Spacer",
-                    start: "top 50%",
+                    start: "top 80%",
+                    markers:true,
                     toggleActions: "restart pause resume reverse",
                 },
                 defaults: { duration: 0.5, ease: "power2.out" },
