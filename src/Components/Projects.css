@@ -1,14 +1,25 @@
 .Projects{
     background-color: #e8e8e8;
     width: 100%;
-    height: min-content;
+    height: 100vh;
     padding: 0px 45px 5px 45px;
+    z-index: 999;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background-image: url(../Images/Projects.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.Projects::-webkit-scrollbar {
+  display: none; /* hide scrollbar */
 }
 
 .Title{
-    height: min-content;
+    height: 100vh;
     width: 100%;
-    /* background-color:aqua; */
     padding: 0px 0px 60px;
     text-align: center;
     overflow: hidden;
@@ -69,14 +80,17 @@
 }
 
 .Project1 h1{
+    height:auto;
+    width: auto;
     padding-top: 8px;
     font-family: "Anton SC", sans-serif;
     font-weight: 100;
     font-size: 4vh;
+    color: white;
 }
 
 .ImgCont:hover{
-    transform: scale(0.98);
+    transform: scale(0.97);
     transition: 0.5s;
 }
 
@@ -89,7 +103,10 @@
     grid-column: 5/7;
     height: auto;
     aspect-ratio: 16/9;
-    background-color: #111;
+    background-color: black;
+    background-image: url(../Images/SMSHelperTH.jpg);
+    background-position: center;
+    background-size: contain;
     margin-top: -50%;
 }
 
@@ -128,9 +145,6 @@
         font-size: 6vh;
     }
     .Project1 h1{
-        padding-top: 4px;
-        font-family: "Anton SC", sans-serif;
-        font-weight: 100;
         font-size: 2vh;
     }
 }
@@ -146,6 +160,9 @@
     .Title h1{
         /* background-color:aqua; */
         font-size: 6vh;
+    }
+    .Project1 h1{
+        font-size: 3vh;
     }
 }
 
