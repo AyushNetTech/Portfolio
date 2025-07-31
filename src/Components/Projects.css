@@ -36,6 +36,7 @@
     font-size: 25vh;
     font-family: "Anton SC", sans-serif;
     font-weight: lighter;
+    overflow: hidden;
 }
 
 .ProjectContainer{
