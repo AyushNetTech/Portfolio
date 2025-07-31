@@ -19,7 +19,7 @@ const Projects = () => {
             scrollTrigger: {
                 trigger: ".Projects",
                 start: "top 50%",
-                markers: true,
+                // markers: true,
                 toggleActions: "restart pause resume reverse",
             },
         });
