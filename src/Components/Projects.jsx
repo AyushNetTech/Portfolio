@@ -16,6 +16,7 @@ const Projects = () => {
             y: 200,
             duration: 0.5,
             stagger:0.1,
+            delay:1,
             scrollTrigger: {
                 trigger: ".Projects",
                 start: "top 50%",
