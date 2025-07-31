@@ -30,18 +30,19 @@ const Info = () => {
             const tlDesktop = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".Info",
-                    start: "top 50%",
+                    start: "top 80%",
+                    markers: true
                 },
                 defaults: { duration: 0.5, ease: "power2.out" },
             });
 
             tlDesktop
                 .from("#a", { x: -400 })
-                .from("#b", { y: 300 }, "<0.3")
-                .from("#c", { x: 500 }, "<0.3")
-                .to("#d", { scale: 1 }, "<0.3")
-                .from("#e", { x: 1000 }, "<0.3")
-                .from(".VFrame", { x: -600 }, "<0.3");
+                .from("#b", { y: 300 }, "<0.1")
+                .from("#c", { x: 500 }, "<0.1")
+                .to("#d", { scale: 1 }, "<0.1")
+                .from("#e", { x: 1000 }, "<0.1")
+                .from(".VFrame", { x: -600 }, "<0.1");
         });
     });
 

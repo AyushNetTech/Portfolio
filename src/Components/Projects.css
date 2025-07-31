@@ -1,14 +1,13 @@
 .Projects{
-    background-color: #e8e8e8;
+    background-color: #e8e8e800;
     width: 100%;
-    height: 100vh;
     padding: 0px 45px 5px 45px;
     z-index: 999;
     position: sticky;
     top: 0px;
     left: 0px;
     overflow: hidden;
-    background-image: url(../Images/Projects.jpg);
+    /* background-image: url(../Images/Projects.jpg); */
     background-position: center;
     background-size: contain;
 }
@@ -18,15 +17,23 @@
 }
 
 .Title{
+    position: sticky;
+    top: 0px;
+    left: 0px;
     height: 100vh;
     width: 100%;
     padding: 0px 0px 60px;
     text-align: center;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    z-index: -100;
 }
 
-.Title h1{
-    font-size: 13vh;
+.Title #Pro{
+    font-size: 25vh;
     font-family: "Anton SC", sans-serif;
     font-weight: lighter;
 }

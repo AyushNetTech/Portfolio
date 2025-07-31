@@ -2,28 +2,32 @@ import React, { useRef, useEffect, useState } from "react";
 import "./Projects.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Spacer from "./Spacer";
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
     const projectsRef = useRef(null);
     const [scrollable, setScrollable] = useState(false);
 
     useGSAP(() => {
-        const mm = gsap.matchMedia();
-
-        mm.add("(max-width: 768px)", () => {
-            gsap.from(".Title", {
-                y: 200,
-                delay: 2,
-                duration: 1
-            });
-
-            gsap.from(".ProContainer", {
-                y: 400,
-                delay: 3,
-                duration: 1
-            });
+    const ctx = gsap.context(() => {
+        gsap.from("#Pro", {
+            y: 200,
+            duration: 0.5,
+            stagger:0.1,
+            scrollTrigger: {
+                trigger: ".Spacer",
+                start: "top 50%",
+                // markers: true,
+                toggleActions: "restart pause resume reverse",
+            },
         });
     });
+
+    return () => ctx.revert(); // Clean up on unmount
+}, []);
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -36,7 +40,7 @@ const Projects = () => {
                 }
             },
             {
-                threshold: [0.9] // ✅ Looser threshold
+                threshold: [0.9]
             }
         );
 
@@ -60,7 +64,16 @@ const Projects = () => {
                 height: "100vh" // ✅ required for scroll to activate
             }}
         >
-            <div className="Title">{/* <h1>Projects</h1> */}</div>
+            <div className="Title">
+                <span id="Pro">P</span>
+                <span id="Pro">R</span>
+                <span id="Pro">O</span>
+                <span id="Pro">J</span>
+                <span id="Pro">E</span>
+                <span id="Pro">C</span>
+                <span id="Pro">T</span>
+                <span id="Pro">S</span>
+            </div>
 
             <div className="ProjectContainer">
                 <div className="GridCont1">

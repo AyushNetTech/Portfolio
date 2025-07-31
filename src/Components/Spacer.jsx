@@ -28,7 +28,7 @@ const Spacer = () => {
             const tlDesktop = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".Spacer",
-                    start: "top 80%",
+                    start: "top 60%",
                     // markers:true,
                     toggleActions: "restart pause resume reverse",
                 },
@@ -37,11 +37,11 @@ const Spacer = () => {
 
             tlDesktop
                 .to("#a", { x: -400 })
-                .to("#b", { y: 300 }, "<0.3")
-                .to("#c", { x: 500 }, "<0.3")
-                .to("#d", { y: -200 }, "<0.3")
-                .to("#e", { x: 1000 }, "<0.3")
-                .to(".VFrame", { x: -600 }, "<0.3");
+                .to("#b", { y: 300 }, "<0.1")
+                .to("#c", { x: 500 }, "<0.1")
+                .to("#d", { y: -200 }, "<0.1")
+                .to("#e", { x: 1000 }, "<0.1")
+                .to(".VFrame", { x: -600 }, "<0.1");
         });
     });
 

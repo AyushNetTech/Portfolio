@@ -145,6 +145,13 @@
     object-fit: cover;
 }
 
+.ProTitle{
+    width: 100%;
+    height: min-content;
+    background-color: black;
+    z-index: 1111;
+}
+
 /* Medi{a Query for Responsivness*/
 
 @media (min-width:100px) and (max-width:700px){
