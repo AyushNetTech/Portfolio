@@ -15,6 +15,7 @@ const Projects = () => {
         gsap.from("#Pro", {
             y: 200,
             duration: 0.5,
+            opacity:0,
             stagger:0.1,
             scrollTrigger: {
                 trigger: ".Projects",
