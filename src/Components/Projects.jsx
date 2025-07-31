@@ -18,7 +18,7 @@ const Projects = () => {
             stagger:0.1,
             scrollTrigger: {
                 trigger: ".Projects",
-                start: "top 80%",
+                start: "top 20%",
                 markers: true,
                 toggleActions: "restart pause resume reverse",
             },
