@@ -10,6 +10,7 @@
     /* background-image: url(../Images/Projects.jpg); */
     background-position: center;
     background-size: contain;
+    scroll-behavior: smooth;
 }
 
 .Projects::-webkit-scrollbar {
