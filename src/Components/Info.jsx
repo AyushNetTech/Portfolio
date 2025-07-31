@@ -30,8 +30,8 @@ const Info = () => {
             const tlDesktop = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".Info",
-                    start: "top 40%",
-                    markers: true
+                    start: "top 35%",
+                    // markers: true
                 },
                 defaults: { duration: 0.5, ease: "power2.out" },
             });
