@@ -16,7 +16,6 @@ const Projects = () => {
             y: 200,
             duration: 0.5,
             stagger:0.1,
-            delay:1,
             scrollTrigger: {
                 trigger: ".Projects",
                 start: "top 50%",
@@ -66,14 +65,16 @@ const Projects = () => {
             }}
         >
             <div className="Title">
-                <span id="Pro">P</span>
-                <span id="Pro">R</span>
-                <span id="Pro">O</span>
-                <span id="Pro">J</span>
-                <span id="Pro">E</span>
-                <span id="Pro">C</span>
-                <span id="Pro">T</span>
-                <span id="Pro">S</span>
+                <div className="ProTitle">
+                    <span id="Pro">P</span>
+                    <span id="Pro">R</span>
+                    <span id="Pro">O</span>
+                    <span id="Pro">J</span>
+                    <span id="Pro">E</span>
+                    <span id="Pro">C</span>
+                    <span id="Pro">T</span>
+                    <span id="Pro">S</span>
+                </div>
             </div>
 
             <div className="ProjectContainer">
