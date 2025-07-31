@@ -29,7 +29,7 @@ const Spacer = () => {
                 scrollTrigger: {
                     trigger: ".Spacer",
                     start: "top 60%",
-                    // markers:true,
+                    markers:true,
                     toggleActions: "restart pause resume reverse",
                 },
                 defaults: { duration: 0.5, ease: "power2.out" },

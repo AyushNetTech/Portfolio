@@ -31,7 +31,7 @@ const Info = () => {
                 scrollTrigger: {
                     trigger: ".Info",
                     start: "top 80%",
-                    // markers: true
+                    markers: true
                 },
                 defaults: { duration: 0.5, ease: "power2.out" },
             });
