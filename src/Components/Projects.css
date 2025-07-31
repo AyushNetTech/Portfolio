@@ -59,7 +59,7 @@
     color: black;
 }
 
-.ImgCont{
+.Project1 .ImgCont{
     height: 90%;
     width: 100%;
     transition: 0.5s;
@@ -67,7 +67,7 @@
     border-radius: 20px;
 }
 
-.ProImg{
+.Project1 .ProImg{
     height: 100%;
     width: 100%;
     background-color: #111;
@@ -89,12 +89,12 @@
     color: white;
 }
 
-.ImgCont:hover{
+.Project1 .ImgCont:hover{
     transform: scale(0.97);
     transition: 0.5s;
 }
 
-.ImgCont:hover .ProImg{
+.Project1 .ImgCont:hover .ProImg{
     transform: scale(1.07);
     transition: 0.5s;
 }
@@ -103,11 +103,37 @@
     grid-column: 5/7;
     height: auto;
     aspect-ratio: 16/9;
-    background-color: black;
+    margin-top: -50%;
+}
+
+.Project2 .ImgCont{
+    height: 90%;
+    width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.Project2 .ProImg{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    /* border: 5px solid black; */
     background-image: url(../Images/SMSHelperTH.jpg);
+    /* border: 2px solid black; */
     background-position: center;
     background-size: contain;
-    margin-top: -50%;
+    transition: 0.5s;
+}
+
+.Project2 .ImgCont:hover{
+    transform: scale(0.97);
+    transition: 0.5s;
+}
+
+.Project2 .ImgCont:hover .ProImg{
+    transform: scale(1.07);
+    transition: 0.5s;
 }
 
 .GridCont2{

@@ -74,7 +74,11 @@ const Projects = () => {
                         <div></div>
                         <div></div>
                         <div></div>
-                        <div className="Project2"></div>
+                        <div className="Project2">
+                            <div className="ImgCont">
+                                <div className="ProImg"></div>
+                            </div>
+                        </div>
                         <div></div>
                     </div>
                 </div>
