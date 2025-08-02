@@ -82,6 +82,10 @@ const Info = () => {
                         </div>
                     </div>
                 </div>
+                <div className="ScrollIndicator">
+                    <span className="ScrollText">Scroll</span>
+                    <div className="ScrollLine"></div>
+                </div>
             </div>
             <Spacer />
         </>

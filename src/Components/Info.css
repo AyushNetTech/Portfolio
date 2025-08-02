@@ -152,6 +152,52 @@
     z-index: 1111;
 }
 
+.ScrollIndicator {
+  margin-top: 50px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+.ScrollText {
+  font-size: 4vw;
+  font-family: "Anton SC", sans-serif;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.ScrollLine {
+  width: 2px;
+  height: 30px;
+  background-color: #222;
+  animation: scrollDown 1.2s infinite;
+  border-radius: 2px;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: scaleY(0.1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0.1);
+    opacity: 0.2;
+  }
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+  .ScrollIndicator {
+    display: flex;
+  }
+}
+
+
 /* Medi{a Query for Responsivness*/
 
 @media (min-width:100px) and (max-width:700px){
