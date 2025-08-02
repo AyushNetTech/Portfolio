@@ -14,10 +14,12 @@ const Info = () => {
 
         const disableScroll = () => {
             document.body.style.overflow = "hidden";
+            console.log("Disable")
         };
 
         const enableScroll = () => {
             document.body.style.overflow = "auto";
+            console.log("Enable")
         };
 
         // 📱 Mobile timeline
@@ -40,16 +42,15 @@ const Info = () => {
 
         // 💻 Desktop timeline with ScrollTrigger
         mm.add("(min-width: 769px)", () => {
-            disableScroll();
+            
 
             const tlDesktop = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".Info",
                     start: "top 30%",
-                    onEnter: disableScroll,      // extra precaution
+                    onEnter: disableScroll,     
                     onLeave: enableScroll,
-                    onEnterBack: disableScroll,
-                    onLeaveBack: enableScroll,
+                   
                 },
                 defaults: { duration: 0.5, ease: "power2.out" },
                 onComplete: enableScroll,
