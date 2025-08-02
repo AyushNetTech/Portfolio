@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Info.css";
 import infoV from "./videoB.mp4";
 import { useGSAP } from "@gsap/react";
@@ -12,9 +12,22 @@ const Info = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
 
+        const disableScroll = () => {
+            document.body.style.overflow = "hidden";
+        };
+
+        const enableScroll = () => {
+            document.body.style.overflow = "auto";
+        };
+
         // 📱 Mobile timeline
         mm.add("(max-width: 768px)", () => {
-            const tlMobile = gsap.timeline({ defaults: { duration: 0.5, ease: "power2.out" } });
+            disableScroll(); // Disable scroll before animation starts
+
+            const tlMobile = gsap.timeline({
+                defaults: { duration: 0.5, ease: "power2.out" },
+                onComplete: enableScroll // Enable scroll after animation ends
+            });
 
             tlMobile
                 .from("#a", { x: -100, delay: 1 })
@@ -27,13 +40,19 @@ const Info = () => {
 
         // 💻 Desktop timeline with ScrollTrigger
         mm.add("(min-width: 769px)", () => {
+            disableScroll();
+
             const tlDesktop = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".Info",
                     start: "top 30%",
-                    // markers: true
+                    onEnter: disableScroll,      // extra precaution
+                    onLeave: enableScroll,
+                    onEnterBack: disableScroll,
+                    onLeaveBack: enableScroll,
                 },
                 defaults: { duration: 0.5, ease: "power2.out" },
+                onComplete: enableScroll,
             });
 
             tlDesktop
@@ -44,7 +63,7 @@ const Info = () => {
                 .from("#e", { x: 1000 }, "<0.1")
                 .from(".VFrame", { x: -600 }, "<0.1");
         });
-    });
+    }, []);
 
     return (
         <>
