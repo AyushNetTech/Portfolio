@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const Navbar = () => {
+const Navbar = ({ onNavigate }) => {
   const navbarRef = useRef(null);
   let lastScrollY = useRef(window.scrollY);
   let isHidden = useRef(false);
@@ -51,12 +51,8 @@ const Navbar = () => {
 
   return (
     <div className="Navbar" ref={navbarRef}>
-      <div className="l" onClick={()=>{
-        console.log("clicked Home")  
-      }}>HOME</div>
-      <div className="l" onClick={()=>{
-        console.log("clicked Projects")  
-      }}>PROJECTS</div>
+      <div className="l" onClick={() => onNavigate("home")}>HOME</div>
+      <div className="l" onClick={() => onNavigate("projects")}>PROJECTS</div>
       <div className="l" onClick={()=>{
         console.log("clicked Skills")  
       }}>SKILLS</div>
