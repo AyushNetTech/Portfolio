@@ -161,7 +161,7 @@
 }
 
 .ScrollText {
-  font-size: 4vw;
+  font-size: 6vw;
   font-family: "Anton SC", sans-serif;
   margin-bottom: 5px;
   color: #222;
@@ -169,7 +169,7 @@
 
 .ScrollLine {
   width: 2px;
-  height: 30px;
+  height: 40px;
   background-color: #222;
   animation: scrollDown 1.2s infinite;
   border-radius: 2px;

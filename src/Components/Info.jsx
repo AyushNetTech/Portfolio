@@ -22,8 +22,11 @@ const Info = () => {
                 .from("#c", { x: 200 }, "<0.2")
                 .to("#d", { scale: 1 }, "<0.2")
                 .from("#e", { x: 500 }, "<0.2")
-                .from(".VFrame", { x: -200 }, "<0.2");
-        });
+                .from(".VFrame", { x: -200 }, "<0.2")
+                .from("ScrollText", {y: 100}, "<0.2")
+                .from ("ScrollLine", {y:-200}, "<0.2");
+
+            });
 
         // 💻 Desktop timeline with ScrollTrigger
         mm.add("(min-width: 769px)", () => {
