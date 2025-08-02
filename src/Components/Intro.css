@@ -32,14 +32,17 @@
 
 @media (min-width:100px) and (max-width:400px){
   .Intro{
-        height: 50vh;
+        height: 40vh;
     }
     .text{
         font-size: 120px;
     }
     .Hello{
-        top: 35%;
+        top: 30%;
     }
+    .text {
+    font-size: 35vw;
+}
 }
 
 @media (min-width:401px) and (max-width:550px){
