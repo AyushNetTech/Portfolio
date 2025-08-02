@@ -1,5 +1,5 @@
 .Projects{
-    background-color: #e8e8e800;
+    background-color: #e8e8e8;
     width: 100%;
     padding: 0px 45px 5px 45px;
     z-index: 999;
@@ -33,17 +33,13 @@
     z-index: -100;
 }
 
-.ProT{
-    height: fit-content;
-    width: 100%;
-    overflow: hidden;
-}
 
 .Title #Pro{
     font-size: 25vh;
     font-family: "Anton SC", sans-serif;
     font-weight: lighter;
     overflow: hidden;
+    color: black;
 }
 
 .ProjectContainer{
