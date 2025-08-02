@@ -31,7 +31,7 @@
 
 @media (min-width:100px) and (max-width:400px){
   .Intro{
-        height: 40vh;
+        height: 30vh;
     }
     .text{
         font-size: 120px;
