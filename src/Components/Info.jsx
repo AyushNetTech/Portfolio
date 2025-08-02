@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Info.css";
 import infoV from "./videoB.mp4";
 import { useGSAP } from "@gsap/react";
@@ -12,24 +12,9 @@ const Info = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
 
-        const disableScroll = () => {
-            document.body.style.overflow = "hidden";
-            console.log("Disable")
-        };
-
-        const enableScroll = () => {
-            document.body.style.overflow = "auto";
-            console.log("Enable")
-        };
-
         // 📱 Mobile timeline
         mm.add("(max-width: 768px)", () => {
-            disableScroll(); // Disable scroll before animation starts
-
-            const tlMobile = gsap.timeline({
-                defaults: { duration: 0.5, ease: "power2.out" },
-                onComplete: enableScroll // Enable scroll after animation ends
-            });
+            const tlMobile = gsap.timeline({ defaults: { duration: 0.5, ease: "power2.out" } });
 
             tlMobile
                 .from("#a", { x: -100, delay: 1 })
@@ -42,29 +27,24 @@ const Info = () => {
 
         // 💻 Desktop timeline with ScrollTrigger
         mm.add("(min-width: 769px)", () => {
-            
-
             const tlDesktop = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".Info",
-                    start: "top 30%",
-                    onEnter: disableScroll,     
-                    onLeave: enableScroll,
-                   
+                    start: "top 35%",
+                    // markers: true
                 },
                 defaults: { duration: 0.5, ease: "power2.out" },
-                onComplete: enableScroll,
             });
 
             tlDesktop
                 .from("#a", { x: -400 })
-                .from("#b", { y: 300 }, "<0.1")
-                .from("#c", { x: 500 }, "<0.1")
-                .to("#d", { scale: 1 }, "<0.1")
-                .from("#e", { x: 1000 }, "<0.1")
-                .from(".VFrame", { x: -600 }, "<0.1");
+                .from("#b", { y: 300 }, "<0.15")
+                .from("#c", { x: 500 }, "<0.15")
+                .to("#d", { scale: 1 }, "<0.15")
+                .from("#e", { x: 1000 }, "<0.15")
+                .from(".VFrame", { x: -600 }, "<0.15");
         });
-    }, []);
+    });
 
     return (
         <>
