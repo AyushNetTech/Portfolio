@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
 .Projects{
     background-color: #e8e8e8;
     width: 100%;
-    padding: 0px 45px 5px 45px;
+    padding: 0px 45px;
     z-index: 999;
     position: sticky;
     top: 0px;
@@ -59,6 +62,7 @@
     height: 100%;
     width: auto;
     margin-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .Project1{
@@ -68,14 +72,65 @@
     /* background-color: #111; */
     margin-top: 20px;
     color: black;
+    border-radius: 20px;
+    background-color: white;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
 }
 
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.2vh;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #505050;
+  font-weight: bold;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 3.3vh;
+}
+
+.card__by {
+    font-size: 2.2vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+
+
+
+.ProHover:hover .ImgCont{
+    height: 100%;
+     opacity: 0.5;
+}
+
+
 .Project1 .ImgCont{
-    height: 90%;
+    height: 75%;
     width: 100%;
     transition: 0.5s;
     overflow: hidden;
-    border-radius: 20px;
+    
 }
 
 .Project1 .ProImg{
@@ -100,29 +155,30 @@
     color: white;
 }
 
-.Project1 .ImgCont:hover{
-    transform: scale(0.97);
-    transition: 0.5s;
-}
-
-.Project1 .ImgCont:hover .ProImg{
-    transform: scale(1.07);
-    transition: 0.5s;
+.GridCont2{
+     height: auto;
+    width: 100%;
 }
 
 .Project2{
-    grid-column: 5/7;
+    grid-column: 4/7;
     height: auto;
-    aspect-ratio: 16/9;
-    margin-top: -50%;
+    aspect-ratio: 16/12;
+    /* background-color: #111; */
+    margin-top: 20px;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 .Project2 .ImgCont{
-    height: 90%;
+    height: 75%;
     width: 100%;
     transition: 0.5s;
     overflow: hidden;
-    border-radius: 20px;
 }
 
 .Project2 .ProImg{
@@ -131,42 +187,15 @@
     background-color: #111;
     /* border: 5px solid black; */
     background-image: url(../Images/SMSHelperTH.jpg);
-    /* border: 2px solid black; */
     background-position: center;
+    /* background-repeat: no-repeat; */
     background-size: contain;
     transition: 0.5s;
 }
 
-.Project2 .ImgCont:hover{
-    transform: scale(0.97);
-    transition: 0.5s;
-}
 
-.Project2 .ImgCont:hover .ProImg{
-    transform: scale(1.07);
-    transition: 0.5s;
-}
 
-.GridCont2{
-     height: auto;
-    width: 100%;
-    /* background-color: burlywood; */
-}
 
-.Project3{
-    grid-column: 1/3;
-    height: auto;
-    aspect-ratio: 16/9;
-    background-color: black;
-}
-
-.Project4{
-    grid-column: 4/7;
-    height: auto;
-    aspect-ratio: 16/12;
-    background-color: black;
-    margin-top: -20%;
-}
 
 
 @media (min-width:100px) and (max-width:400px){
@@ -180,12 +209,32 @@
     .Title #Pro{
         font-size: 8vh;
     }
-    .Project1 h1{
-        font-size: 2vh;
+    .card__info {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 0px 5px 0px 5px;
     }
+
+        .card__category {
+            font-size: 1.3vh;
+            letter-spacing: 1px;
+    }
+
+        .card__title {
+            margin-top: 0.5px;
+            margin-bottom: -1px;
+            font-size: 1.8vh;
+        }
+
+        .card__by {
+            font-size: 1.5vh;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+    }
+
 }
 
-@media (min-width:401px) and (max-width:600px){
+/* @media (min-width:401px) and (max-width:600px){
     .Projects{
         height: min-content;
         padding: 0px 20px;
@@ -194,23 +243,28 @@
         padding: 40px 0px 30px;
     }
     .Title h1{
-        /* background-color:aqua; */
+       
         font-size: 6vh;
     }
     .Project1 h1{
         font-size: 3vh;
     }
-}
+} */
 
 /* ************ For Project Container **********/
 
 @media screen and (max-width:786px) {
     .Grid{
         grid-template-columns: 1fr;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .Project1, .Project2, .Project3, .Project4{
         grid-column: 1 / -1;
         margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
     }
+
 }

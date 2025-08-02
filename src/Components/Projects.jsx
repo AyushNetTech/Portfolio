@@ -80,31 +80,40 @@ const Projects = () => {
             <div className="ProjectContainer">
                 <div className="GridCont1">
                     <div className="Grid">
-                        <div className="Project1">
+                        <div className="Project1 ProHover">
                             <div className="ImgCont">
                                 <div className="ProImg"></div>
                             </div>
-                            {/* <h1>XTrack - Workout Tracker Application</h1> */}
-                        </div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div className="Project2">
-                            <div className="ImgCont">
-                                <div className="ProImg"></div>
+                            <div class="card__info">
+                                <span class="card__category">Android App</span>
+                                <h3 class="card__title">XTrack - Workout Tracking Application</h3>
+                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">Android Studio, Kotlin, XML, MP-AndroidChart Library</a></span>
                             </div>
                         </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                         <div></div>
                     </div>
                 </div>
 
                 <div className="GridCont2">
                     <div className="Grid">
-                        <div className="Project3"></div>
                         <div></div>
                         <div></div>
                         <div></div>
-                        <div className="Project4"></div>
+                        <div className="Project2 ProHover">
+                            <div className="ImgCont">
+                                <div className="ProImg"></div>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__category">Android App</span>
+                                <h3 class="card__title">SMS Helper - For Offline Use</h3>
+                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">Android Studio, Java, XML</a></span>
+                            </div>
+                        </div>
+                        <div></div>
                         <div></div>
                     </div>
                 </div>
