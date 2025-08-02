@@ -59,6 +59,7 @@ const Projects = () => {
     return (
         <div
             className="Projects"
+            id="Projects"
             ref={projectsRef}
             style={{
                 overflowY: scrollable ? "scroll" : "hidden", // ✅ scroll only vertical

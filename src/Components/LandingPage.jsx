@@ -16,8 +16,7 @@ import img10 from "../Images/NodeJS2.svg";
 import img11 from "../Images/MySQL.svg";
 import img12 from "../Images/GitHub.svg";
 
-import MainPage from "./Intro"; 
-import Projects from "./Projects";
+import PortfolioCont from "./PortfolioCont";
 
 const LandingPage = () => {
   const imagesRef = useRef([]);
@@ -72,9 +71,7 @@ const LandingPage = () => {
 
       {showMain && (
           <div ref={mainRef} style={{ opacity: 0 }}>
-            <MainPage />
-            <Info/>
-            <Projects />
+            <PortfolioCont/>
           </div>
       )}
     </>

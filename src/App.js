@@ -7,7 +7,6 @@ import CustomCursor from "./Components/CustomCursor";
 const App =()=>{
     return(
       <div className="App">
-        <Navbar />
         <LandingPage/>
         {/* <CustomCursor/> */}
       </div>

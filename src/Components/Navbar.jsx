@@ -14,7 +14,7 @@ const Navbar = () => {
       y: -100,
       opacity: 0,
       duration: 1,
-      delay: 3,
+      delay: 1,
       ease: "power2.out",
     });
   }, []);

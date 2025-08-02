@@ -1,7 +1,7 @@
 .Intro{
-    height: 120vh;
+    height: 90vh;
     width: 100%;
-    background-color: #e8e8e8;
+    background-color: #E8E8E8;
     /* background-color: #FAF9F6; */
     overflow: hidden;
     display: flex;
@@ -14,7 +14,6 @@
     position: absolute;
     height: auto;
     width: auto;
-    top: 20px;
 }
 .text {
     color: black;

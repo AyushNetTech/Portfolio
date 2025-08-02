@@ -1,15 +1,14 @@
-.Navbar{
-    position: fixed;
+.Navbar {
+    position: sticky;
     top: 20px;
-    left: 50%;
+    margin: 0 auto;           /* ✅ auto-center block */
     padding: 0px 6px;
-    /* background-color: 	#FAF9F6; */
     background-color: #2e2e2e;
     height: 60px;
-    width: 500px;
-    z-index: 1000;
+    width: 90%;               /* ✅ Responsive width */
+    max-width: 500px;         /* ✅ Cap size on large screens */
+    z-index: 10000;
     border-radius: 20px;
-    transform: translate(-50%);
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -19,6 +18,7 @@
     user-select: none;
     opacity: 1;
 }
+
 
 .Contact{
     color: black;
