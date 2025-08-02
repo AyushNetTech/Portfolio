@@ -177,9 +177,8 @@
     .Title{
         padding: 40px 0px 30px;
     }
-    .Title h1{
-        /* background-color:aqua; */
-        font-size: 6vh;
+    .Title #Pro{
+        font-size: 8vh;
     }
     .Project1 h1{
         font-size: 2vh;
