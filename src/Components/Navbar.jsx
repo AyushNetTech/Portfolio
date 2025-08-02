@@ -51,10 +51,18 @@ const Navbar = () => {
 
   return (
     <div className="Navbar" ref={navbarRef}>
-      <div className="l">HOME</div>
-      <div className="l">PROJECTS</div>
-      <div className="l">SKILLS</div>
-      <div className="Contact l">CONTACT</div>
+      <div className="l" onClick={()=>{
+        console.log("clicked Home")  
+      }}>HOME</div>
+      <div className="l" onClick={()=>{
+        console.log("clicked Projects")  
+      }}>PROJECTS</div>
+      <div className="l" onClick={()=>{
+        console.log("clicked Skills")  
+      }}>SKILLS</div>
+      <div className="Contact l" onClick={()=>{
+        console.log("clicked Contact")  
+      }}>CONTACT</div>
     </div>
   );
 };
