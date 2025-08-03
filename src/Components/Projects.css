@@ -50,7 +50,7 @@
     width: 100%;
 }
 
-.GridCont1{
+.GridCont{
     height: auto;
     width: 100%;
     /* background-color: aqua; */
@@ -65,7 +65,7 @@
     padding-bottom: 50px;
 }
 
-.Project1{
+.ProjectLeft{
     grid-column: 1/4;
     height: auto;
     aspect-ratio: 16/12;
@@ -78,6 +78,46 @@
     overflow: hidden;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
 }
+
+.ProjectRight{
+    grid-column: 4/7;
+    height: auto;
+    aspect-ratio: 16/12;
+    margin-top: 20px;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ProHover:hover .ImgCont{
+    height: 100%;
+     opacity: 0.5;
+}
+
+
+.ImgCont{
+    height: 75%;
+    width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    
+}
+
+.ProImg{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    background-position: center;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+
+
+
+
 
 .card__info {
 z-index: 2;
@@ -115,85 +155,6 @@ border-bottom-right-radius: 12px;
     text-decoration: none;
     color: #AD7D52;
 }
-
-
-
-
-.ProHover:hover .ImgCont{
-    height: 100%;
-     opacity: 0.5;
-}
-
-
-.Project1 .ImgCont{
-    height: 75%;
-    width: 100%;
-    transition: 0.5s;
-    overflow: hidden;
-    
-}
-
-.Project1 .ProImg{
-    height: 100%;
-    width: 100%;
-    background-color: #111;
-    /* border: 5px solid black; */
-    background-image: url(../Images/XTrack.jpg);
-    background-position: center;
-    /* background-repeat: no-repeat; */
-    background-size: contain;
-    transition: 0.5s;
-}
-
-.Project1 h1{
-    height:auto;
-    width: auto;
-    padding-top: 8px;
-    font-family: "Anton SC", sans-serif;
-    font-weight: 100;
-    font-size: 4vh;
-    color: white;
-}
-
-.GridCont2{
-     height: auto;
-    width: 100%;
-}
-
-.Project2{
-    grid-column: 4/7;
-    height: auto;
-    aspect-ratio: 16/12;
-    /* background-color: #111; */
-    margin-top: 20px;
-    color: black;
-    border-radius: 20px;
-    background-color: white;
-    /* border: 2px solid black; */
-    overflow: hidden;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
-}
-
-.Project2 .ImgCont{
-    height: 75%;
-    width: 100%;
-    transition: 0.5s;
-    overflow: hidden;
-}
-
-.Project2 .ProImg{
-    height: 100%;
-    width: 100%;
-    background-color: #111;
-    /* border: 5px solid black; */
-    background-image: url(../Images/SMSHelperTH.jpg);
-    background-position: center;
-    /* background-repeat: no-repeat; */
-    background-size: contain;
-    transition: 0.5s;
-}
-
-
 
 
 
@@ -260,7 +221,7 @@ border-bottom-right-radius: 12px;
         padding-bottom: 10px;
     }
 
-    .Project1, .Project2, .Project3, .Project4{
+    .ProjectRight, .ProjectLeft{
         grid-column: 1 / -1;
         margin-top: 20px;
         border-radius: 10px;

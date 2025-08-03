@@ -4,6 +4,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Spacer from "./Spacer";
+
+import XTrackImg from "../Images/XTrack.jpg"
+import SMSHelperImg from "../Images/SMSHelperTH.jpg"
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -78,11 +82,11 @@ const Projects = () => {
             </div>
 
             <div className="ProjectContainer">
-                <div className="GridCont1">
+                <div className="GridCont">
                     <div className="Grid">
-                        <div className="Project1 ProHover">
+                        <div className="ProjectLeft ProHover">
                             <div className="ImgCont">
-                                <div className="ProImg"></div>
+                                <div className="ProImg" style={{backgroundImage: `url(${XTrackImg})`}}></div>
                             </div>
                             <div class="card__info">
                                 <span class="card__category">Android App</span>
@@ -98,14 +102,14 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="GridCont2">
+                <div className="GridCont">
                     <div className="Grid">
                         <div></div>
                         <div></div>
                         <div></div>
-                        <div className="Project2 ProHover">
+                        <div className="ProjectRight ProHover">
                             <div className="ImgCont">
-                                <div className="ProImg"></div>
+                                <div className="ProImg" style={{backgroundImage: `url(${SMSHelperImg})`}}></div>
                             </div>
                             <div class="card__info">
                                 <span class="card__category">Android App</span>
@@ -113,6 +117,26 @@ const Projects = () => {
                                 <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">Android Studio, Java, XML</a></span>
                             </div>
                         </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div className="GridCont">
+                    <div className="Grid">
+                        <div className="ProjectLeft ProHover">
+                            <div className="ImgCont">
+                                <div className="ProImg"></div>
+                            </div>
+                            <div class="card__info">
+                                <span class="card__category">Android App</span>
+                                <h3 class="card__title">XTrack - Workout Tracking Application</h3>
+                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">Android Studio, Kotlin, XML, MP-AndroidChart Library</a></span>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                         <div></div>
                         <div></div>
                     </div>
