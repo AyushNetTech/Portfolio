@@ -84,7 +84,9 @@ const Projects = () => {
             <div className="ProjectContainer">
                 <div className="GridCont">
                     <div className="Grid">
-                        <div className="ProjectLeft ProHover">
+                        <div className="ProjectLeft ProHover" onClick={()=>{
+                            window.open("https://github.com/AyushUpase369/XTrack", "_blank")
+                        }}>
                             <div className="ImgCont">
                                 <div className="ProImg" style={{backgroundImage: `url(${XTrackImg})`}}></div>
                             </div>
@@ -107,7 +109,9 @@ const Projects = () => {
                         <div></div>
                         <div></div>
                         <div></div>
-                        <div className="ProjectRight ProHover">
+                        <div className="ProjectRight ProHover" onClick={()=>{
+                            window.open("https://github.com/AyushUpase369/SMS-Helper", "_blank")
+                        }}>
                             <div className="ImgCont">
                                 <div className="ProImg" style={{backgroundImage: `url(${SMSHelperImg})`}}></div>
                             </div>
@@ -129,9 +133,9 @@ const Projects = () => {
                                 <div className="ProImg"></div>
                             </div>
                             <div class="card__info">
-                                <span class="card__category">Android App</span>
-                                <h3 class="card__title">XTrack - Workout Tracking Application</h3>
-                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">Android Studio, Kotlin, XML, MP-AndroidChart Library</a></span>
+                                <span class="card__category">Category</span>
+                                <h3 class="card__title">Project Title</h3>
+                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">....</a></span>
                             </div>
                         </div>
                         <div></div>
