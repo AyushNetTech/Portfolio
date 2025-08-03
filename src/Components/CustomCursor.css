@@ -12,7 +12,7 @@
 }
 
 /* Optional: Hide native cursor globally */
-body {
+body { 
   cursor: none;
 }
 
