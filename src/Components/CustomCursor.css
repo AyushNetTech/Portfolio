@@ -12,6 +12,15 @@
 }
 
 /* Optional: Hide native cursor globally */
-/* body {
+body {
   cursor: none;
-} */
+}
+
+
+@media screen and (max-width:786px) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+
