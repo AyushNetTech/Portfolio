@@ -71,7 +71,7 @@ const Projects = () => {
             }}
         >
             <div className="Title">
-                <span id="Pro" style={{color:"red", textDecoration:"underline"}}>P</span>
+                <span id="Pro" style={{color:"rgb(236, 48, 48)", textDecoration:"underline"}}>P</span>
                 <span id="Pro">R</span>
                 <span id="Pro">O</span>
                 <span id="Pro">J</span>
