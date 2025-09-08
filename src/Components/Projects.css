@@ -9,7 +9,7 @@
     position: sticky;
     top: 0px;
     left: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-image: url(../Images/Projects.jpg); */
     background-position: center;
     background-size: contain;
@@ -28,7 +28,8 @@
     width: 100%;
     padding: 0px 0px 60px;
     text-align: center;
-    overflow: hidden;
+    /* background-color: #AD7D52; */
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +47,10 @@
 }
 
 .ProjectContainer{
-    height: 100%;
+     position: sticky;
+    top: 0;
+    left: 0;
+    height: 200vh;
     width: 100%;
 }
 

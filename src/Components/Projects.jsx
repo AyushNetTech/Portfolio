@@ -68,8 +68,7 @@ const Projects = () => {
             style={{
                 overflowY: scrollable ? "scroll" : "hidden", // ✅ scroll only vertical
                 height: "100vh" // ✅ required for scroll to activate
-            }}
-        >
+            }}>
             <div className="Title">
                 <span id="Pro" style={{color:"rgb(236, 48, 48)", textDecoration:"underline"}}>P</span>
                 <span id="Pro">R</span>

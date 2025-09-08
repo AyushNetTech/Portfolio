@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Spacer from "./Spacer";
+import Projects from "./Projects";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -89,6 +90,7 @@ const Info = () => {
                 </div>
             </div>
             <Spacer />
+            <Projects/>
         </>
     );
 };

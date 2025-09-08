@@ -4,6 +4,7 @@ import Intro from './Intro'
 import Info from './Info'
 import Projects from './Projects'
 import Navbar from './Navbar'
+import Skills from './Skills'
 
 const PortfolioCont = () => {
 
@@ -24,13 +25,14 @@ const PortfolioCont = () => {
   return (
     <div className="PortfolioCont">
         <Navbar onNavigate={handleNavClick}/>
-        <div ref={homeRef}>
-          <Intro />
-        </div>
-        <Info/>
-        <div ref={projectsRef}>
-          <Projects />
-      </div>
+          <div ref={homeRef}>
+            <Intro />
+          </div>
+          <Info/>
+          {/* <div ref={projectsRef}>
+            <Projects />
+          </div> */}
+          {/* <Skills/> */}
     </div>
   )
 }
