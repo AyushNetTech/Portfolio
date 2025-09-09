@@ -29,10 +29,10 @@ const PortfolioCont = () => {
             <Intro />
           </div>
           <Info/>
-          {/* <div ref={projectsRef}>
+          <div ref={projectsRef}>
             <Projects />
-          </div> */}
-          {/* <Skills/> */}
+          </div> 
+          <Skills/>
     </div>
   )
 }

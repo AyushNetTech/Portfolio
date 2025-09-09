@@ -33,42 +33,10 @@ const Projects = () => {
     return () => ctx.revert(); // Clean up on unmount
 }, []);
 
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                console.log("Intersection ratio:", entry.intersectionRatio);
-                if (entry.intersectionRatio >= 0.9) {
-                    setScrollable(true);
-                } else {
-                    setScrollable(false);
-                }
-            },
-            {
-                threshold: [0.9]
-            }
-        );
-
-        if (projectsRef.current) {
-            observer.observe(projectsRef.current);
-        }
-
-        return () => {
-            if (projectsRef.current) {
-                observer.unobserve(projectsRef.current);
-            }
-        };
-    }, []);
-
     return (
         <div
             className="Projects"
-            id="Projects"
-            ref={projectsRef}
-            style={{
-                overflowY: scrollable ? "scroll" : "hidden", // ✅ scroll only vertical
-                height: "100vh" // ✅ required for scroll to activate
-            }}>
+            id="Projects">
             <div className="Title">
                 <span id="Pro" style={{color:"rgb(236, 48, 48)", textDecoration:"underline"}}>P</span>
                 <span id="Pro">R</span>

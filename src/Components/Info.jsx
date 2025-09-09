@@ -90,7 +90,7 @@ const Info = () => {
                 </div>
             </div>
             <Spacer />
-            <Projects/>
+            {/*<Projects/> */}
         </>
     );
 };
