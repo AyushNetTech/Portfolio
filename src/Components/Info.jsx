@@ -77,8 +77,8 @@ const Info = () => {
                     </div>
                     <div className="Video">
                         <div className="VFrame">
-                            <video autoPlay loop muted>
-                                <source src={infoV} type="video/mp4" />
+                            <video autoPlay loop muted poster="https://v66kyfwcgplwzcso.public.blob.vercel-storage.com/portfolioTB.png">
+                                <source src="https://v66kyfwcgplwzcso.public.blob.vercel-storage.com/PortFolioInfoVideo.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
