@@ -1,11 +1,9 @@
 import React from "react";
 import "./Info.css";
-import infoV from "./PortFolioInfoVideo.mp4";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Spacer from "./Spacer";
-import Projects from "./Projects";
 
 gsap.registerPlugin(ScrollTrigger);
 

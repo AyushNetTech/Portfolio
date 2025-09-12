@@ -6,4 +6,62 @@
     position: sticky;
     top: 0px;
     left: 0px;
+    display: flex;
+}
+
+.SkillData{
+    height: 100vh;
+    width: 50%;
+    background-color: #e8e8e8;
+}
+
+.SkillTitle{
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+    background-color: #e8e8e8;
+    color: black;
+}
+
+.Title1{
+    height: min-content;
+    width: 100%;
+    text-align: center;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.Title2{
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+#T1, #T2{
+    height: 100%;
+    font-size: 15vh;
+    font-family: "Monoton", sans-serif;
+    font-weight: lighter;
+    overflow: hidden;
+    color: black;
+}
+
+#T1{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#T2{
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
