@@ -61,12 +61,14 @@ const Skills = () => {
               <img className="ProLImg" src={img9} alt="" />
               <img className="ProLImg" src={img13} alt="" />
             </div>
-            <h1 className='ToolsTitle T'>- Tools & Platforms</h1>
+            <h1 className='ToolsTitle T'>- Tools & Databases</h1>
             <div className='LanguagesCont'>
               <img className="ProLImg" src={img16} alt="" />
               <img className="ProLImg" src={img17} alt="" />
               <img className="ProLImg" src={img12} alt="" />
               <img className="ProLImg" src={img18} alt="" />
+              <img className="ProLImg" src={img11} alt="" />
+              <img className="ProLImg" src={img15} alt="" />
             </div>
             {/* <h1 className='DataBaseTitle T'>- Databases</h1>
             <div className='LanguagesCont'>
