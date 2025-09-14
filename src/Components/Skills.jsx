@@ -14,6 +14,7 @@ import img10 from "../Images/NodeJS2.svg";
 import img11 from "../Images/MySQL.svg";
 import img12 from "../Images/GitHub.svg";
 import img13 from "../Images/GSAP_SVG.svg"
+import img14 from "../Images/SQLlight.svg"
 
 const Skills = () => {
   return (
@@ -62,6 +63,7 @@ const Skills = () => {
             <div className='LanguagesCont'>
               {/* <div className="ProLImg" style={{backgroundImage:`url(${img1})`}}></div> */}
               <img className="ProLImg" src={img11} alt="" />
+              <img className="ProLImg" src={img14} alt="" />
             </div>
           </div>
       </div>
