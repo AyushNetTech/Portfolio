@@ -15,6 +15,7 @@ import img11 from "../Images/MySQL.svg";
 import img12 from "../Images/GitHub.svg";
 import img13 from "../Images/GSAP_SVG.svg"
 import img14 from "../Images/SQLlight.svg"
+import img15 from "../Images/SQLlight2.svg"
 
 const Skills = () => {
   return (
@@ -44,7 +45,6 @@ const Skills = () => {
           <div className='SkillData'>
             <h1 className='LanguageTitle T'>- Programming Languages</h1>
             <div className='LanguagesCont'>
-              {/* <div className="ProLImg" style={{backgroundImage:`url(${img1})`}}></div> */}
               <img className="ProLImg" src={img1} alt="" />
               <img className="ProLImg" src={img2} alt="" />
               <img className="ProLImg" src={img3} alt="" />
@@ -53,18 +53,21 @@ const Skills = () => {
             </div>
             <h1 className='FEndTitle T'>- Frontend Development</h1>
             <div className='LanguagesCont'>
-              {/* <div className="ProLImg" style={{backgroundImage:`url(${img1})`}}></div> */}
               <img className="ProLImg" src={img6} alt="" />
               <img className="ProLImg" src={img7} alt="" />
               <img className="ProLImg" src={img9} alt="" />
               <img className="ProLImg" src={img13} alt="" />
             </div>
-            <h1 className='DataBaseTitle T'>- Databases</h1>
+            <h1 className='ToolsTitle T'>- Tools & Platforms</h1>
             <div className='LanguagesCont'>
-              {/* <div className="ProLImg" style={{backgroundImage:`url(${img1})`}}></div> */}
-              <img className="ProLImg" src={img11} alt="" />
-              <img className="ProLImg" src={img14} alt="" />
+              <img className="ProLImg" src={img5} alt="" />
+              <img className="ProLImg" src={img12} alt="" />
             </div>
+            {/* <h1 className='DataBaseTitle T'>- Databases</h1>
+            <div className='LanguagesCont'>
+              <img className="ProLImg" src={img11} alt="" />
+              <img className="ProLImg" src={img15} alt="" />
+            </div> */}
           </div>
       </div>
     </div>
