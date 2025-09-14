@@ -1,5 +1,5 @@
 .SkillCont{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-color: #e8e8e8;
     z-index: 1000;
@@ -24,7 +24,7 @@
 }
 
 .SkillTitle{
-    padding-top: 20px;
+    padding-top: 70px;
     height: 100vh;
     width: 50%;
     text-align: center;
@@ -76,6 +76,15 @@
 
 
 @media (min-width:100px) and (max-width:500px){
+    .SkillCont{
+        height: 110vh;
+        width: 100%;
+        background-color: #e8e8e8;
+        z-index: 1000;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+    }
     .Skills{
         display:block;
         border-radius: 60px 60px 0px 0px;
@@ -134,13 +143,22 @@
     }
 }
 
-@media (min-width:501px) and (max-width:786px){
+@media (min-width:501px) and (max-width:1000px){
+    .SkillCont{
+        height: 100vh;
+        width: 100%;
+        background-color: #e8e8e8;
+        z-index: 1000;
+        position: sticky;
+        top: 40px;
+        left: 0px;
+    }
     .Skills{
         display:block;
         border-radius: 60px 60px 0px 0px;
     }
     .SkillData{
-        height: 80vh;
+        height: 73vh;
         width: 100%;
     }
 
@@ -190,5 +208,21 @@
         display: flex;
         align-items: start;
         justify-content: center;
+    }
+}
+
+@media (min-width:800px) and (max-width:1000px){
+
+    .SkillData{
+        height: 68vh;
+        width: 100%;
+    }
+    #T1, #T2{
+        height: 100%;
+        font-size: 10vh;
+        font-family: "Monoton", sans-serif;
+        font-weight: lighter;
+        overflow: hidden;
+        color: white;
     }
 }
