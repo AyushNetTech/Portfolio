@@ -29,22 +29,28 @@
 
 /* Media Query for Responsivness*/
 
-@media (min-width:100px) and (max-width:425px){
+@media (min-width:100px) and (max-width:500px){
   .Intro{
         height: 40vh;
     }
-    .text{
-        font-size: 5vw;
-    }
-    .Hello{
-        top: 10%;
-    }
     .text {
-    font-size: 40vw;
-}
+        font-size: 40vw;
+    }
 }
 
-@media (min-width:426px) and (max-width:550px){
+@media (min-width:501px) and (max-width:600px){
+  .Intro{
+        height: 40vh;
+    }
+    .Hello{
+        padding-top: 20px;
+    }
+    .text {
+        font-size: 33vw;
+    }
+}
+
+@media (min-width:601px) and (max-width:750){
     .Intro{
         height: 40vh;
     }

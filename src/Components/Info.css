@@ -191,7 +191,7 @@
 }
 
 /* Show only on mobile */
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .ScrollIndicator {
     display: flex;
   }
@@ -200,8 +200,9 @@
 
 /* Medi{a Query for Responsivness*/
 
-@media (min-width:100px) and (max-width:425px){
+@media (min-width:100px) and (max-width:500px){
     .Info{
+        padding-top: 0px;
         height: 60vh;
         width: 100%;
         user-select: none;
@@ -322,8 +323,131 @@
     }
 }
 
+@media (min-width:501px) and (max-width:600px){
+    .Info{
+        padding-top: 0px;
+        height: 60vh;
+        width: 100%;
+        user-select: none;
+        /* background-color: aqua; */
+        padding-bottom: 20px;
+    }
 
-@media (min-width:426px) and (max-width:700px){
+    .Upper{
+        height: 14vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        padding: 0px 20px;
+        margin-top: 10px;
+    }
+
+    .divA{
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        align-items: end;
+    }
+
+    .divB{
+        height: 100%;
+        display: flex;
+        align-items: end;
+        margin-top: 10px;
+        padding-left: 5px;
+    }
+
+    #a{
+        width: fit-content;
+        height: fit-content;
+        font-size: 6.5vw;
+        font-weight: 500;
+        font-family: "Monoton", sans-serif;
+    }
+
+    #b{
+        font-size: 13vw;
+        font-family: "Anton SC", sans-serif;
+    }
+
+    .Below{
+        padding: 10px 20px;
+        width: 100%;
+        display: flex;
+    }
+
+
+    .TextA{
+        height: auto;
+        display: flex;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .TextB{
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    .Text1{
+        height: auto;
+        width:min-content;
+        /* background-color: #eed72c; */
+        overflow: hidden;
+    }
+
+    #c{
+        height: fit-content;
+        width: fit-content;
+        font-size:6.3vw;
+        font-weight: bolder;
+        font-family: "Turret Road", sans-serif;
+    }
+
+    .Text2{
+        height: auto;
+        width: min-content;
+        /* background-color: aqua; */
+        overflow: hidden;
+    }
+    #d{
+        scale: 0;
+        font-size: 8.2vw;
+        font-family: "Monoton", sans-serif;
+        font-weight: 100;
+        padding: 6px;
+    }
+
+    #d:hover{
+        color: rgb(236, 48, 48);
+    }
+
+    #e{
+        display: block;
+        width: 100%;
+        font-size: 6.2vw;
+        font-weight: bolder;
+        font-family: "Turret Road", sans-serif;
+    }
+
+    .Video{
+        display: flex;
+        align-items: end;
+    }
+
+    .VFrame{
+        border-radius: 25px;
+        border: 3px solid black;
+    }
+    .VFrame video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media (min-width:601px) and (max-width:700px){
     .Info{
         height: 100vh;
         width: 100%;
