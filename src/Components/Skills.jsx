@@ -16,6 +16,9 @@ import img12 from "../Images/GitHub.svg";
 import img13 from "../Images/GSAP_SVG.svg"
 import img14 from "../Images/SQLlight.svg"
 import img15 from "../Images/SQLlight2.svg"
+import img16 from "../Images/Android_Studio.svg"
+import img17 from "../Images/Git.svg"
+import img18 from "../Images/Figma.svg"
 
 const Skills = () => {
   return (
@@ -60,8 +63,10 @@ const Skills = () => {
             </div>
             <h1 className='ToolsTitle T'>- Tools & Platforms</h1>
             <div className='LanguagesCont'>
-              <img className="ProLImg" src={img5} alt="" />
+              <img className="ProLImg" src={img16} alt="" />
+              <img className="ProLImg" src={img17} alt="" />
               <img className="ProLImg" src={img12} alt="" />
+              <img className="ProLImg" src={img18} alt="" />
             </div>
             {/* <h1 className='DataBaseTitle T'>- Databases</h1>
             <div className='LanguagesCont'>

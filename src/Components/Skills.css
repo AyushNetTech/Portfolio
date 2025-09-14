@@ -119,6 +119,7 @@
     .SkillData{
         height: 80vh;
         width: 100%;
+        padding-top: 30px;
     }
 
     .SkillTitle{
@@ -168,6 +169,21 @@
         align-items: start;
         justify-content: center;
     }
+     .T{
+        font-size: 3vh;
+    }
+
+    .LanguagesCont{
+        margin-top: 10px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    .ProLImg{
+        height: 100%;
+        width: 50px;
+        padding-left: 10px;
+        /* background-color: #252525; */
+    }
 }
 
 @media (min-width:501px) and (max-width:1000px){
@@ -187,6 +203,7 @@
     .SkillData{
         height: 73vh;
         width: 100%;
+        padding-top: 30px;
     }
 
     .SkillTitle{
@@ -236,6 +253,21 @@
         align-items: start;
         justify-content: center;
     }
+     .T{
+        font-size: 5vh;
+    }
+
+    .LanguagesCont{
+        margin-top: 5px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    .ProLImg{
+        height: 100%;
+        width: 100px;
+        padding-left: 20px;
+        /* background-color: #252525; */
+    }
 }
 
 @media (min-width:800px) and (max-width:1000px){
@@ -243,6 +275,7 @@
     .SkillData{
         height: 68vh;
         width: 100%;
+        padding-top: 30px;
     }
     #T1, #T2{
         height: 100%;
@@ -251,5 +284,21 @@
         font-weight: lighter;
         overflow: hidden;
         color: white;
+    }
+
+    .T{
+        font-size: 5vh;
+    }
+
+    .LanguagesCont{
+        margin-top: 5px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    .ProLImg{
+        height: 100%;
+        width: 100px;
+        padding-left: 20px;
+        /* background-color: #252525; */
     }
 }
