@@ -5,6 +5,7 @@ import Info from './Info'
 import Projects from './Projects'
 import Navbar from './Navbar'
 import Skills from './Skills'
+import Contact from './Contact'
 
 const PortfolioCont = () => {
 
@@ -39,6 +40,7 @@ const PortfolioCont = () => {
           <div ref={skillsRef}>
             <Skills/>
           </div>
+          <Contact/>
     </div>
   )
 }
