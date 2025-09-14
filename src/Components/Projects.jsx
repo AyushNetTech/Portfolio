@@ -61,7 +61,7 @@ const Projects = () => {
                             <div class="card__info">
                                 <span class="card__category">Android App</span>
                                 <h3 class="card__title">XTrack - Workout Tracking Application</h3>
-                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">Android Studio, Kotlin, XML, MP-AndroidChart Library</a></span>
+                                <span class="card__by">Tools & Technologies : <span class="card__author" title="author">Android Studio, Kotlin, XML, MP-AndroidChart Library</span></span>
                             </div>
                         </div>
                         <div></div>
@@ -105,7 +105,7 @@ const Projects = () => {
                             <div class="card__info">
                                 <span class="card__category">Android App</span>
                                 <h3 class="card__title">SMS Helper - For Offline Use</h3>
-                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">Android Studio, Java, XML</a></span>
+                                <span class="card__by">Tools & Technologies : <span class="card__author" title="author">Android Studio, Java, XML</span></span>
                             </div>
                         </div>
                         <div></div>

@@ -174,29 +174,32 @@ border-bottom-right-radius: 12px;
         padding: 40px 0px 30px;
     }
     .Title #Pro{
-        font-size: 8vh;
+        font-size: 7vh;
     }
     .card__info {
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
         padding: 0px 5px 0px 5px;
     }
-
         .card__category {
             font-size: 1.3vh;
             letter-spacing: 1px;
     }
 
-        .card__title {
-            margin-top: 0.5px;
-            margin-bottom: -1px;
-            font-size: 1.8vh;
-        }
+    .card__title {
+        margin-top: 0.5px;
+        margin-bottom: -1px;
+        font-size: 1.8vh;
+    }
+    .card__by {
+        font-size: 1.5vh;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+    }
 
-        .card__by {
-            font-size: 1.5vh;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 500;
+    .Grid{
+        margin-top: 40px;
+        /* padding-bottom: 50px; */
     }
 
 }
