@@ -72,7 +72,7 @@
 
 .ProjectLeft{
     grid-column: 1/4;
-    height: auto;
+    height: min-content;
     aspect-ratio: 16/12;
     /* background-color: #111; */
     margin-top: 20px;
@@ -86,7 +86,7 @@
 
 .ProjectRight{
     grid-column: 4/7;
-    height: auto;
+    height: min-content;
     aspect-ratio: 16/12;
     margin-top: 20px;
     color: black;
@@ -104,7 +104,7 @@
 
 
 .ImgCont{
-    height: 75%;
+    height: 70%;
     width: 100%;
     transition: 0.5s;
     overflow: hidden;
@@ -126,6 +126,7 @@
 
 
 .card__info {
+    height: 30%;
 z-index: 2;
   background-color: #fff;
   border-bottom-left-radius: 12px;
@@ -165,7 +166,7 @@ border-bottom-right-radius: 12px;
 
 
 
-@media (min-width:100px) and (max-width:400px){
+@media (min-width:100px) and (max-width:500px){
     .Projects{
         height: min-content;
         padding: 0px 20px;
@@ -200,6 +201,69 @@ border-bottom-right-radius: 12px;
     .Grid{
         margin-top: 40px;
         /* padding-bottom: 50px; */
+    }
+
+}
+
+@media (min-width:501px) and (max-width:1000px){
+    .Projects{
+        height: min-content;
+        padding: 0px 20px;
+    }
+    .Title{
+        padding: 40px 0px 30px;
+    }
+    .Title #Pro{
+        font-size: 10vh;
+    }
+    .card__info {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 10px 5px 0px 8px;
+    }
+        .card__category {
+            font-size: 2vh;
+            letter-spacing: 1px;
+    }
+
+    .card__title {
+        margin-top: 0.5px;
+        margin-bottom: -1px;
+        font-size: 2.3vh;
+    }
+    .card__by {
+        font-size: 2vh;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+    }
+
+    .Grid{
+        margin-top: 40px;
+        /* padding-bottom: 50px; */
+    }
+
+}
+
+@media (min-width:1001px) and (max-width:1080px){
+    .card__info {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 10px 5px 0px 10px;
+    }
+        .card__category {
+            font-size: 2.2vh;
+            letter-spacing: 1px;
+    }
+
+    .card__title {
+        margin-top: 0.5px;
+        margin-bottom: -1px;
+        font-size: 2.5vh;
+    }
+    .card__by {
+        font-size: 2.2vh;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
     }
 
 }
