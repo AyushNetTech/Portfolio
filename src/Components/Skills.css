@@ -1,48 +1,56 @@
-.Skills{
+.SkillCont{
     height: 100vh;
     width: 100%;
-    background-color: aqua;
+    background-color: #e8e8e8;
     z-index: 1000;
     position: sticky;
     top: 0px;
     left: 0px;
+}
+.Skills{
+    height: 100%;
+    width: 100%;
+    background-color: #252525;
     display: flex;
+    flex-direction: row-reverse;
+    border-radius: 60px 60px 0px 0px;
 }
 
 .SkillData{
     height: 100vh;
     width: 50%;
-    background-color: #e8e8e8;
+    background-color: #252525;
+    border-radius: 60px 0px 0px 0px;
 }
 
 .SkillTitle{
+    padding-top: 20px;
     height: 100vh;
     width: 50%;
     text-align: center;
-    background-color: #e8e8e8;
-    color: black;
+    background-color: #252525;
+    border-radius: 0px 60px 0px 0px;
 }
 
 .Title1{
     height: min-content;
     width: 100%;
     text-align: center;
-    background-color: #e8e8e8;
+    background-color: #252525;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    border-radius: 0px 60px 0px 0px;
 }
 
 .Title2{
     height: 50vh;
     width: 100%;
     text-align: center;
-    background-color: #e8e8e8;
+    background-color: #252525;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
 }
 
 #T1, #T2{
@@ -51,7 +59,7 @@
     font-family: "Monoton", sans-serif;
     font-weight: lighter;
     overflow: hidden;
-    color: black;
+    color: white;
 }
 
 #T1{
@@ -64,4 +72,123 @@
     display: flex;
     align-items: start;
     justify-content: center;
+}
+
+
+@media (min-width:100px) and (max-width:500px){
+    .Skills{
+        display:block;
+        border-radius: 60px 60px 0px 0px;
+    }
+    .SkillData{
+        height: 80vh;
+        width: 100%;
+    }
+
+    .SkillTitle{
+        height: min-content;
+        width: 100%;
+        border-radius: 60px 60px 0px 0px;
+        overflow: hidden;
+    }
+
+    .Title1{
+        height: min-content;
+        width: 100%;
+        text-align: center;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Title2{
+        height: min-content;
+        width: 100%;
+        text-align: center;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #T1, #T2{
+        height: 100%;
+        font-size: 6vh;
+        font-family: "Monoton", sans-serif;
+        font-weight: lighter;
+        overflow: hidden;
+        color: white;
+    }
+
+    #T1{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    #T2{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+}
+
+@media (min-width:501px) and (max-width:786px){
+    .Skills{
+        display:block;
+        border-radius: 60px 60px 0px 0px;
+    }
+    .SkillData{
+        height: 80vh;
+        width: 100%;
+    }
+
+    .SkillTitle{
+        height: min-content;
+        width: 100%;
+        border-radius: 60px 60px 0px 0px;
+        overflow: hidden;
+    }
+
+    .Title1{
+        height: min-content;
+        width: 100%;
+        text-align: center;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Title2{
+        height: min-content;
+        width: 100%;
+        text-align: center;
+        background-color: #252525;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #T1, #T2{
+        height: 100%;
+        font-size: 8vh;
+        font-family: "Monoton", sans-serif;
+        font-weight: lighter;
+        overflow: hidden;
+        color: white;
+    }
+
+    #T1{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    #T2{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
 }

@@ -10,11 +10,10 @@
     padding: 0px 45px;
     z-index: 999;
     height: min-content;
-    /* overflow: hidden; */
-    /* background-image: url(../Images/Projects.jpg); */
     background-position: center;
     background-size: contain;
     scroll-behavior: smooth;
+    border-top: 5px solid black;
 }
 
 .Projects::-webkit-scrollbar {
@@ -201,25 +200,6 @@ border-bottom-right-radius: 12px;
     }
 
 }
-
-/* @media (min-width:401px) and (max-width:600px){
-    .Projects{
-        height: min-content;
-        padding: 0px 20px;
-    }
-    .Title{
-        padding: 40px 0px 30px;
-    }
-    .Title h1{
-       
-        font-size: 6vh;
-    }
-    .Project1 h1{
-        font-size: 3vh;
-    }
-} */
-
-/* ************ For Project Container **********/
 
 @media screen and (max-width:786px) {
     .Grid{

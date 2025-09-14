@@ -3,10 +3,8 @@ import "./Skills.css";
 
 const Skills = () => {
   return (
-    <div className="Skills">
-          <div className='SkillData'>
-          
-          </div>
+    <div className='SkillCont'>
+      <div className="Skills">
           <div className="SkillTitle">
               <div className="Title1">
                 <span id="T1" style={{color:"rgb(236, 48, 48)", textDecoration:"underline"}}>T</span>
@@ -28,6 +26,10 @@ const Skills = () => {
                 <span id="T2">S</span>
               </div>
           </div>
+          <div className='SkillData'>
+          
+          </div>
+      </div>
     </div>
   )
 }
