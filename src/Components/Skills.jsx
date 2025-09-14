@@ -5,16 +5,13 @@ import img1 from "../Images/C.svg";
 import img2 from "../Images/C++.svg";
 import img3 from "../Images/Java.svg";
 import img4 from "../Images/kotlin-1.svg";
-import img5 from "../Images/Android.svg";
 import img6 from "../Images/HTML.svg";
 import img7 from "../Images/CSS.svg";
 import img8 from "../Images/JavaScript.svg";
 import img9 from "../Images/React.svg";
-import img10 from "../Images/NodeJS2.svg";
 import img11 from "../Images/MySQL.svg";
 import img12 from "../Images/GitHub.svg";
 import img13 from "../Images/GSAP_SVG.svg"
-import img14 from "../Images/SQLlight.svg"
 import img15 from "../Images/SQLlight2.svg"
 import img16 from "../Images/Android_Studio.svg"
 import img17 from "../Images/Git.svg"
@@ -70,11 +67,6 @@ const Skills = () => {
               <img className="ProLImg" src={img11} alt="" />
               <img className="ProLImg" src={img15} alt="" />
             </div>
-            {/* <h1 className='DataBaseTitle T'>- Databases</h1>
-            <div className='LanguagesCont'>
-              <img className="ProLImg" src={img11} alt="" />
-              <img className="ProLImg" src={img15} alt="" />
-            </div> */}
           </div>
       </div>
     </div>
