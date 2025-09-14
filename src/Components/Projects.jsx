@@ -7,6 +7,7 @@ import Spacer from "./Spacer";
 
 import XTrackImg from "../Images/XTrack.jpg"
 import SMSHelperImg from "../Images/SMSHelperTH.jpg"
+// import MoviesHubImg from "../Images/"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,7 +98,7 @@ const Projects = () => {
                     <div className="Grid">
                         <div className="ProjectLeft ProHover">
                             <div className="ImgCont">
-                                <div className="ProImg"></div>
+                                <div className="ProImg" style={{backgroundImage: `url(${SMSHelperImg})`}}></div>
                             </div>
                             <div class="card__info">
                                 <span class="card__category">Category</span>
