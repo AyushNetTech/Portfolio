@@ -63,7 +63,7 @@ const Info = () => {
                     <div className="Text">
                         <div className="TextA">
                             <div className="Text1">
-                                <h1 id="c">Full Stack Developer</h1>
+                                <h1 id="c">Website Developer</h1>
                             </div>
                             <div className="Text2">
                                 <h1 id="d">AND</h1>
