@@ -7,7 +7,7 @@ import Spacer from "./Spacer";
 
 import XTrackImg from "../Images/XTrack.jpg"
 import SMSHelperImg from "../Images/SMSHelperTH.jpg"
-// import MoviesHubImg from "../Images/"
+import MoviesHubImg from "../Images/MoviesHubTH.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,15 +78,15 @@ const Projects = () => {
                         <div></div>
                         <div></div>
                         <div className="ProjectRight ProHover" onClick={()=>{
-                            window.open("https://github.com/AyushUpase369/SMS-Helper", "_blank")
+                            window.open("https://github.com/AyushUpase369/MoviesHub", "_blank")
                         }}>
                             <div className="ImgCont">
-                                <div className="ProImg" style={{backgroundImage: `url(${SMSHelperImg})`}}></div>
+                                <div className="ProImg" style={{backgroundImage: `url(${MoviesHubImg})`}}></div>
                             </div>
                             <div class="card__info">
-                                <span class="card__category">Android App</span>
-                                <h3 class="card__title">SMS Helper - For Offline Use</h3>
-                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">Android Studio, Java, XML</a></span>
+                                <span class="card__category">Website</span>
+                                <h3 class="card__title">MoviesHub - Get More About Movies</h3>
+                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">JavaScript, HTML/CSS, ReactJS, Redux, Vite</a></span>
                             </div>
                         </div>
                         <div></div>
@@ -96,14 +96,16 @@ const Projects = () => {
 
                 <div className="GridCont">
                     <div className="Grid">
-                        <div className="ProjectLeft ProHover">
+                        <div className="ProjectLeft ProHover" onClick={()=>{
+                            window.open("https://github.com/AyushUpase369/SMS-Helper", "_blank")
+                        }}>
                             <div className="ImgCont">
                                 <div className="ProImg" style={{backgroundImage: `url(${SMSHelperImg})`}}></div>
                             </div>
                             <div class="card__info">
-                                <span class="card__category">Category</span>
-                                <h3 class="card__title">Project Title</h3>
-                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">....</a></span>
+                                <span class="card__category">Android App</span>
+                                <h3 class="card__title">SMS Helper - For Offline Use</h3>
+                                <span class="card__by">Tools & Technologies : <a href="#" class="card__author" title="author">Android Studio, Java, XML</a></span>
                             </div>
                         </div>
                         <div></div>
