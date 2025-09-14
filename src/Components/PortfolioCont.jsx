@@ -20,6 +20,10 @@ const PortfolioCont = () => {
     if (section === "home" && homeRef.current) {
       homeRef.current.scrollIntoView({ behavior: "smooth" });
     }
+
+    if (section === "skills" && skillsRef.current) {
+      skillsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -32,7 +36,9 @@ const PortfolioCont = () => {
           <div ref={projectsRef}>
             <Projects />
           </div> 
-          <Skills/>
+          <div ref={skillsRef}>
+            <Skills/>
+          </div>
     </div>
   )
 }

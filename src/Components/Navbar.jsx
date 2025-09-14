@@ -53,9 +53,7 @@ const Navbar = ({ onNavigate }) => {
     <div className="Navbar" ref={navbarRef}>
       <div className="l" onClick={() => onNavigate("home")}>HOME</div>
       <div className="l" onClick={() => onNavigate("projects")}>PROJECTS</div>
-      <div className="l" onClick={()=>{
-        console.log("clicked Skills")  
-      }}>SKILLS</div>
+      <div className="l" onClick={()=> onNavigate("skills")}>SKILLS</div>
       <div className="Contact l" onClick={()=>{
         console.log("clicked Contact")  
       }}>CONTACT</div>
