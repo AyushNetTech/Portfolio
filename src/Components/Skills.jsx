@@ -56,6 +56,12 @@ const Skills = () => {
               <img className="ProLImg" src={img6} alt="" />
               <img className="ProLImg" src={img7} alt="" />
               <img className="ProLImg" src={img9} alt="" />
+              <img className="ProLImg" src={img13} alt="" />
+            </div>
+            <h1 className='DataBaseTitle T'>- Databases</h1>
+            <div className='LanguagesCont'>
+              {/* <div className="ProLImg" style={{backgroundImage:`url(${img1})`}}></div> */}
+              <img className="ProLImg" src={img11} alt="" />
             </div>
           </div>
       </div>
