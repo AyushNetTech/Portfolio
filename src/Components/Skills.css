@@ -18,15 +18,18 @@
 
 .SkillData{
     height: 100vh;
-    width: 50%;
+    width: 60%;
+    padding-top: 130px;
     background-color: #252525;
     border-radius: 60px 0px 0px 0px;
+    padding-left: 10px;
 }
 
 .SkillTitle{
     padding-top: 70px;
     height: 100vh;
-    width: 50%;
+    width: 40%;
+    padding-right: 10px;
     text-align: center;
     background-color: #252525;
     border-radius: 0px 60px 0px 0px;
@@ -55,7 +58,7 @@
 
 #T1, #T2{
     height: 100%;
-    font-size: 15vh;
+    font-size: 13vh;
     font-family: "Monoton", sans-serif;
     font-weight: lighter;
     overflow: hidden;
@@ -74,6 +77,30 @@
     justify-content: center;
 }
 
+.T{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 6vh;
+    /* letter-spacing: 2px;
+    font-weight: 500;*/
+    color: white; 
+    font-weight: bold;
+}
+
+.LanguagesCont{
+    /* background-color: aqua; */
+    margin-top: 10px;
+    height: 80px;
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.ProLImg{
+    height: 100%;
+    width: 100px;
+    padding-left: 20px;
+    /* background-color: #252525; */
+}
 
 @media (min-width:100px) and (max-width:500px){
     .SkillCont{
