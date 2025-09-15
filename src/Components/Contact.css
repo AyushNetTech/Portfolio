@@ -14,3 +14,40 @@
     width: 100%;
     border-radius: 50px 50px 0 0;
 }
+
+.ContactTitle{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.ContactTitle1{
+    height: min-content;
+    width: min-content;
+    text-align: center;
+    display: inline;
+}
+
+.ContactTitle2{
+    padding-left: 50px;
+    height: min-content;
+    width: min-content;
+    text-align: center;
+    display: inline;
+}
+
+#CT{
+    height: 100%;
+    font-size: 13vh;
+    font-family: "Monoton", sans-serif;
+    font-weight: lighter;
+    overflow: hidden;
+}
+
+.ContactDetails{
+    height: 75vh;
+    width: 100%;
+}
