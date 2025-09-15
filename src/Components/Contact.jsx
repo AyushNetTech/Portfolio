@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css"
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import myAnimation from "../Images/";
+import myAnimation from "../Images/ContactMe.lottie";
 
 const Contact =()=>{
     return(
@@ -23,12 +23,17 @@ const Contact =()=>{
             </div>
           </div>
           <div className="ContactDetails">
+            <div className="LottieCont">
               <DotLottieReact
                 src={myAnimation}
                 autoplay
                 loop
-                style={{ width: 300, height: 300 }}
+                style={{ width: 400, height: 400 }}
               />
+            </div>
+            <div className="FormCont">
+              
+            </div>
           </div>
         </div>
       </div>
