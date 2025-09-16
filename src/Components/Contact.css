@@ -61,6 +61,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.lottie {
+  width: 400px;
+  height: 400px;
+}
 .FormCont{
     height: 100%;
     width: 40%;
@@ -193,4 +198,160 @@ ul li:nth-child(3) a:before {
 
 ul li:nth-child(4) a:before {
   background: #2ec766;
+}
+
+@media (min-width:100px) and (max-width:500px){
+  .ContactComp{
+    background-color: #252525;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .ContactCont{
+      background-color: #e8e8e8;
+      height: 100vh;
+      width: 100%;
+      border-radius: 50px 50px 0 0;
+  }
+
+  .ContactTitle{
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  .ContactTitle1{
+      height: min-content;
+      width: min-content;
+      text-align: center;
+      display: inline;
+  }
+
+  .ContactTitle2{
+      padding-left: 10px;
+      height: min-content;
+      width: min-content;
+      text-align: center;
+      display: inline;
+  }
+
+  #CT{
+      height: 100%;
+      font-size: 6vh;
+      font-family: "Monoton", sans-serif;
+      font-weight: lighter;
+      overflow: hidden;
+  }
+
+  .ContactDetails{
+      height: 85vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  .LottieCont{
+      height: 30vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  
+    .lottie {
+      width: 190px;
+      height: 190px;
+    }
+
+  .FormCont{
+      height: 45vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* min-height: 100vh; */
+  }
+
+  .contact-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form label {
+    margin-bottom: 2px;
+    font-size: 2.4vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 1px 1px;
+    /* margin-bottom: 10px; */
+    background: transparent;
+    font-size: 2.2vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+  }
+
+  .contact-form textarea {
+    resize: none;
+    height: 30px;
+  }
+
+  .contact-form button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+
+  .SocialMediaCont{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1vh;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  ul li a {
+    width: 40px;
+    height: 40px;
+    background-color: #252525;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #252525;
+    z-index: 1;
+  }
 }

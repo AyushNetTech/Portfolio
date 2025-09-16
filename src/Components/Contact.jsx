@@ -28,9 +28,10 @@ const Contact =()=>{
                 src={myAnimation}
                 autoplay
                 loop
-                style={{ width: 400, height: 400 }}
+                className="lottie"
               />
             </div>
+
             <div className="FormCont">
               <form className="contact-form">
                 <label htmlFor="name">Full Name</label>
