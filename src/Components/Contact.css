@@ -244,7 +244,7 @@ ul li:nth-child(4) a:before {
 
   #CT{
       height: 100%;
-      font-size: 6vh;
+      font-size: 5.7vh;
       font-family: "Monoton", sans-serif;
       font-weight: lighter;
       overflow: hidden;
@@ -267,8 +267,8 @@ ul li:nth-child(4) a:before {
 
   
     .lottie {
-      width: 190px;
-      height: 190px;
+      width: 200px;
+      height: 200px;
     }
 
   .FormCont{
@@ -281,7 +281,7 @@ ul li:nth-child(4) a:before {
   }
 
   .contact-form {
-    width: 90%;
+    width: 85%;
     display: flex;
     flex-direction: column;
   }
@@ -307,17 +307,17 @@ ul li:nth-child(4) a:before {
 
   .contact-form textarea {
     resize: none;
-    height: 30px;
+    height: 40px;
   }
 
   .contact-form button {
     background: #000;
     color: #fff;
     border: none;
-    padding: 8px;
+    padding: 10px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 15px;
     transition: 0.3s;
   }
 
@@ -341,12 +341,12 @@ ul li:nth-child(4) a:before {
   }
 
   ul li a {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background-color: #252525;
     text-align: center;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 45px;
+    font-size: 23px;
     display: block;
     border-radius: 50%;
     position: relative;
