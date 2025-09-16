@@ -42,8 +42,20 @@ const Contact =()=>{
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message"></textarea>
 
-                <button type="submit">Contact Us</button>
+                <button type="submit">Submit</button>
               </form>
+            </div>
+            <div className="SocialMediaCont">
+              <ul>
+                <li>
+                  <a href="https://github.com/AyushUpase369" target="_blank"><i class="fab fa-github icon"></i></a></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/ayushupase/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+                <li>
+                  <a href="https://www.instagram.com/x_ayu.sh_0/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+                <li>
+                <a href="https://www.hackerrank.com/profile/ayushsunilupase1" target="_blank"><i class="fab fa-hackerrank icon"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>

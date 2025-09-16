@@ -56,14 +56,14 @@
 
 .LottieCont{
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .FormCont{
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,8 @@
 
 .contact-form label {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 3.5vh;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #333;
 }
 
@@ -90,6 +91,8 @@
   margin-bottom: 20px;
   font-size: 14px;
   background: transparent;
+  font-size: 3vh;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   outline: none;
 }
 
@@ -111,4 +114,83 @@
 
 .contact-form button:hover {
   background: #333;
+}
+
+.SocialMediaCont{
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 60px;
+  height: 60px;
+  background-color: #252525;
+  text-align: center;
+  line-height: 60px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #252525;
+  z-index: 1;
+}
+
+ul li a .icon {
+  position: relative;
+  color: white;
+  transition: .5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before{
+  background: black;
+}
+
+ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+  background: #ff0d66;
+}
+
+ul li:nth-child(4) a:before {
+  background: #2ec766;
 }
