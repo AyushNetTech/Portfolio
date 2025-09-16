@@ -12,6 +12,7 @@ const PortfolioCont = () => {
   const projectsRef = useRef(null);
   const homeRef = useRef(null);
   const skillsRef = useRef(null);
+  const contactRef = useRef(null);
 
   const handleNavClick = (section) => {
     if (section === "projects" && projectsRef.current) {
@@ -24,6 +25,10 @@ const PortfolioCont = () => {
 
     if (section === "skills" && skillsRef.current) {
       skillsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+
+    if (section === "contact" && contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -40,7 +45,9 @@ const PortfolioCont = () => {
           <div ref={skillsRef}>
             <Skills/>
           </div>
-          <Contact/>
+          <div ref={contactRef}>
+            <Contact/>
+          </div>
     </div>
   )
 }
