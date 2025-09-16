@@ -32,7 +32,18 @@ const Contact =()=>{
               />
             </div>
             <div className="FormCont">
-              
+              <form className="contact-form">
+                <label htmlFor="name">Full Name</label>
+                <input type="text" id="name" name="name" />
+
+                <label htmlFor="email">E-mail</label>
+                <input type="email" id="email" name="email" />
+
+                <label htmlFor="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Contact Us</button>
+              </form>
             </div>
           </div>
         </div>
