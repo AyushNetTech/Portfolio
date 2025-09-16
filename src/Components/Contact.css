@@ -354,6 +354,21 @@ ul li:nth-child(4) a:before {
     border: 3px solid #252525;
     z-index: 1;
   }
+  ul li:nth-child(1){
+  background: black;
+}
+
+ul li:nth-child(2){
+  background: #55acee;
+}
+
+ul li:nth-child(3) {
+  background: #ff0d66;
+}
+
+ul li:nth-child(4){
+  background: #2ec766;
+}
 }
 
 @media (min-width:501px) and (max-width:1000px){
