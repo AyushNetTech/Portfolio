@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css"
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import myAnimation from "../Images/ContactMe.lottie";
 
 const Contact =()=>{
     return(
@@ -25,7 +24,8 @@ const Contact =()=>{
           <div className="ContactDetails">
             <div className="LottieCont">
               <DotLottieReact
-                src={myAnimation}
+                src="https://v66kyfwcgplwzcso.public.blob.vercel-storage.com/ContactMe.lottie"
+                poster="https://v66kyfwcgplwzcso.public.blob.vercel-storage.com/contactme.svg"
                 autoplay
                 loop
                 className="lottie"
