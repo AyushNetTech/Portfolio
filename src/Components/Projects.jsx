@@ -5,9 +5,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Spacer from "./Spacer";
 
-import XTrackImg from "../Images/XTrack.jpg"
-import SMSHelperImg from "../Images/SMSHelperTH.jpg"
-import MoviesHubImg from "../Images/MoviesHubTH.png"
+const XTrackImg = "https://v66kyfwcgplwzcso.public.blob.vercel-storage.com/Project%20Thumnails/XTrack.jpg"
+const SMSHelperImg = "https://v66kyfwcgplwzcso.public.blob.vercel-storage.com/Project%20Thumnails/SMSHelperTH.jpg"
+const MoviesHubImg = "https://v66kyfwcgplwzcso.public.blob.vercel-storage.com/Project%20Thumnails/MoviesHubTH.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
