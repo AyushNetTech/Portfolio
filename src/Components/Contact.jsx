@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Contact = () => {
   const form = useRef();
@@ -11,19 +14,19 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_tfag8uj",   // From EmailJS
-        "template_80y6pgc",  // From EmailJS
+        "service_qznn5tg",   // From EmailJS
+        "template_zqtnbau",  // From EmailJS
         form.current,
-        "kbpnGOyCb9sRHlX2m"    // From EmailJS
+        "AB5HVjtdX6mDZQg_k"    // From EmailJS
       )
       .then(
-        (result) => {
-          alert("✅ Message sent successfully!");
-          form.current.reset();
-        },
-        (error) => {
-          alert("❌ Failed to send. Try again!");
-        }
+        () => {
+        toast.success("✅ Message sent successfully!");
+        form.current.reset();
+      },
+      () => {
+        toast.error("❌ Failed to send. Please try again!");
+      }
       );
   };
 
@@ -98,6 +101,15 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer 
+      position="bottom-right" 
+      autoClose={3000} 
+      hideProgressBar={false} 
+      newestOnTop={true} 
+      closeOnClick 
+      pauseOnHover 
+      theme="colored"
+    />
     </div>
   );
 };
